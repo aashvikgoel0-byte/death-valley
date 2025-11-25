@@ -227,7 +227,7 @@
       align-items: center;
     }
 
-    .toggle-btn {
+    .toggle-btn, .print-btn {
       padding: var(--space-8) var(--space-16);
       background-color: var(--color-surface);
       border: 1px solid var(--color-border);
@@ -239,7 +239,7 @@
       transition: all 0.2s ease;
     }
 
-    .toggle-btn:hover {
+    .toggle-btn:hover, .print-btn:hover {
       background-color: var(--color-primary);
       color: var(--color-white);
     }
@@ -468,22 +468,6 @@
       .badge-required { background-color: rgba(239, 68, 68, 0.2); color: #fca5a5; }
     }
 
-    .print-btn {
-      padding: var(--space-8) var(--space-16);
-      background-color: var(--color-primary);
-      color: var(--color-white);
-      border: none;
-      border-radius: var(--radius-sm);
-      cursor: pointer;
-      font-size: var(--font-size-sm);
-      font-weight: var(--font-weight-semibold);
-      transition: background-color 0.2s ease;
-    }
-
-    .print-btn:hover {
-      background-color: var(--color-primary-hover);
-    }
-
     @media print {
       .controls, .print-btn, .note-section, .expandable-header { display: none; }
       .expandable-content { display: block !important; }
@@ -504,7 +488,7 @@
   <div class="doc-container">
     <div class="doc-header">
       <h1 class="doc-title">Complete 8-Day Family Road Trip</h1>
-      <div class="doc-subtitle">San Jose to Death Valley, Mount Whitney &amp; Mammoth Lakes</div>
+      <div class="doc-subtitle">San Jose to Death Valley, Mount Whitney & Mammoth Lakes</div>
       
       <div class="trip-meta">
         <div class="meta-item">
@@ -513,19 +497,15 @@
         </div>
         <div class="meta-item">
           <span class="meta-label">Travelers</span>
-          <span class="meta-value">2 Adults + 1 Child (Age 9)</span>
+          <span class="meta-value">Parent + 2 Kids (Ages 14 & 9)</span>
         </div>
         <div class="meta-item">
-          <span class="meta-label">Dietary</span>
-          <span class="meta-value">Vegetarian</span>
-        </div>
-        <div class="meta-item">
-          <span class="meta-label">Base Camp</span>
-          <span class="meta-value">Best Western Frontier, Lone Pine</span>
+          <span class="meta-label">Departure</span>
+          <span class="meta-value">Monday 3:15 PM</span>
         </div>
         <div class="meta-item">
           <span class="meta-label">Total Distance</span>
-          <span class="meta-value">~800 miles round trip</span>
+          <span class="meta-value">~950 miles</span>
         </div>
       </div>
     </div>
@@ -556,7 +536,7 @@
       </div>
 
       <div class="event driving">
-        <div class="event-time">2:00 PM</div>
+        <div class="event-time">3:15 PM</div>
         <div class="event-activity">Depart San Jose</div>
         <div class="event-location">📍 2620 Hocking Way, San Jose, CA</div>
         <div class="event-details">
@@ -565,32 +545,21 @@
             <li>Pack car with snacks, water, jackets, hiking gear</li>
             <li>Confirm weather forecast for Death Valley (check temps)</li>
             <li>Ensure camera batteries charged, memory cards ready</li>
-            <li>Review route: US-101 South → I-5 South → CA-58 East → US-395 North</li>
+            <li>Review route: US-101 South → I-5 South → CA-58 East</li>
           </ul>
           <p><strong>Duration:</strong> 15 minutes prep time</p>
         </div>
       </div>
 
       <div class="event dining">
-        <div class="event-time">2:30-3:45 PM</div>
-        <div class="event-activity">🍽️ Lunch at Olives Mediterranean Market &amp; Grill</div>
-        <div class="event-location">📍 Gilroy, CA</div>
+        <div class="event-time">5:00-6:15 PM</div>
+        <div class="event-activity">🍽️ Lunch at Olives Mediterranean Market & Grill</div>
+        <div class="event-location">📍 Gilroy, CA (30 miles south on US-101)</div>
         <div class="event-details">
           <p><strong>Cuisine:</strong> Mediterranean - Fresh, healthy, family-friendly</p>
           
           <div class="highlight">
-            <div class="highlight-title">🌱 Vegetarian Options:</div>
-            <ul>
-              <li>Falafel Plate - Crispy chickpea fritters with tahini</li>
-              <li>Hummus Platter - House-made hummus with fresh vegetables</li>
-              <li>Mediterranean Salad - Fresh greens, olives, feta, cucumbers</li>
-              <li>Stuffed Grape Leaves (Dolmas)</li>
-              <li>Fresh pita bread with various dips</li>
-            </ul>
-          </div>
-
-          <div class="highlight">
-            <div class="highlight-title">⭐ Why This Stop:</div>
+            <div class="highlight-title">Why This Stop:</div>
             <p>Perfect halfway point between San Jose and Bakersfield (30 miles, 30-40 min from start). Fresh, healthy Mediterranean food provides good energy for the long drive ahead. Quick service means you won't lose time. Family-friendly atmosphere great for bathroom break and stretching legs.</p>
           </div>
 
@@ -600,598 +569,283 @@
       </div>
 
       <div class="event driving">
-        <div class="event-time">3:45-6:30 PM</div>
-        <div class="event-activity">🚗 Drive to Bakersfield</div>
-        <div class="event-location">📍 Route: US-101 S → I-5 S → CA-58 E</div>
+        <div class="event-time">6:15-9:00 PM</div>
+        <div class="event-activity">🚗 Drive: Gilroy → Bakersfield</div>
+        <div class="event-location">📍 Via I-5 South & CA-99 South</div>
         <div class="event-details">
           <p><strong>Distance:</strong> 110 miles, approximately 2 hours 45 minutes</p>
-          <p><strong>What You'll See:</strong></p>
-          <ul>
-            <li>Central Valley agricultural landscape - vast farms and orchards</li>
-            <li>Sierra Nevada mountains appearing in the distance (east)</li>
-            <li>Gradually changing terrain from bay area to inland valley</li>
-            <li>Sunset beginning around 4:54 PM - golden light over valley</li>
-          </ul>
+          
+          <div class="highlight">
+            <div class="highlight-title">What You'll See:</div>
+            <ul>
+              <li>San Joaquin Valley agricultural landscapes</li>
+              <li>Sunset over farmlands (sunset at ~5:00 PM)</li>
+              <li>Evening transition into darkness</li>
+            </ul>
+          </div>
+          
           <p><strong>Tips:</strong> Good time for audiobook or family playlist. Keep snacks accessible for the 9-year-old.</p>
         </div>
       </div>
 
       <div class="event dining">
-        <div class="event-time">6:30-7:30 PM</div>
-        <div class="event-activity">🍽️ Dinner at Blue Elephant Thai Restaurant</div>
-        <div class="event-location">📍 8200 Stockdale Hwy Ste M-1, Bakersfield, CA 93311</div>
+        <div class="event-time">9:00-10:15 PM</div>
+        <div class="event-activity">🍽️ Dinner at Blue Elephant Thai</div>
+        <div class="event-location">📍 Bakersfield, CA</div>
         <div class="event-details">
           <p><strong>Phone:</strong> (661) 833-8190</p>
           <p><strong>Hours:</strong> Mon-Sun 7:00 AM - 9:00 PM</p>
           <p><strong>Rating:</strong> 4.4/5 stars (54 reviews) - Award-winning Thai restaurant</p>
           
           <div class="highlight">
-            <div class="highlight-title">🌱 Vegetarian Specialties (All $19):</div>
-            <ul>
-              <li><strong>Green Curry with Vegetables</strong> - Vegan available, coconut milk base, bamboo shoots, Thai basil</li>
-              <li><strong>Yellow Curry with Vegetables</strong> - Milder curry, potatoes, onions, carrots</li>
-              <li><strong>Pad Thai Vegetarian</strong> - Classic rice noodles, tofu, bean sprouts, peanuts</li>
-              <li><strong>Spicy Eggplant</strong> - Thai basil, garlic, chilies, soy sauce</li>
-              <li><strong>Garlic Green Beans</strong> - Crispy beans, garlic sauce</li>
-              <li><strong>Fresh Ginger with Vegetables</strong> - Ginger, mushrooms, bell peppers</li>
-              <li><strong>Golden Triangle (Tofu)</strong> - Crispy tofu specialty</li>
-              <li><strong>Vegetable Spring Rolls</strong> - Appetizer</li>
-            </ul>
+            <div class="highlight-title">Why This Restaurant:</div>
+            <p><strong>Best Thai in Bakersfield:</strong> Multiple reviews praise exceptional vegetarian/vegan options. Staff is knowledgeable about dietary restrictions. Food "cooked to perfection" according to customers. White-tablecloth ambiance but family-friendly atmosphere. Cozy and welcoming - perfect after a long drive.</p>
           </div>
-
-          <div class="highlight">
-            <div class="highlight-title">⭐ Why This Restaurant:</div>
-            <p><strong>Best Thai in Bakersfield:</strong> Multiple reviews praise exceptional vegetarian/vegan options. Staff is knowledgeable about dietary restrictions. Food "cooked to perfection" according to customers. White tablecloth dining but still family-friendly. Outdoor seating available if weather permits.</p>
-            <p><strong>Customer Reviews:</strong> "Many vegan options," "knowledgeable staff," "exceptional flavors," "perfect for vegetarians"</p>
-          </div>
-
-          <p><strong>Duration:</strong> 1-1.5 hours</p>
-          <p><strong>Atmosphere:</strong> Cozy, white tablecloths, family-friendly, comfortable for kids</p>
-        </div>
-      </div>
-
-      <div class="event driving">
-        <div class="event-time">7:30-9:30 PM</div>
-        <div class="event-activity">🚗 Drive to Lone Pine</div>
-        <div class="event-location">📍 Route: CA-58 E → US-395 N → Lone Pine</div>
-        <div class="event-details">
-          <p><strong>Distance:</strong> 140 miles, approximately 2.5 hours</p>
-          <p><strong>What You'll See:</strong></p>
-          <ul>
-            <li>Evening desert drive - temperature dropping, clear skies</li>
-            <li>Stars beginning to appear (some of darkest skies in California)</li>
-            <li>Sierra Nevada mountains getting progressively larger and closer</li>
-            <li>Elevation steadily increasing (Lone Pine is 3,700 feet)</li>
-            <li>Desert landscape transformation - Joshua trees, sagebrush</li>
-          </ul>
-          <p><strong>Night Driving Tips:</strong></p>
-          <ul>
-            <li>Watch for wildlife (especially deer) on US-395</li>
-            <li>Gas up in Bakersfield if needed - limited options ahead</li>
-            <li>Beautiful stargazing if you stop briefly</li>
-          </ul>
         </div>
       </div>
 
       <div class="event">
-        <div class="event-time">9:30-10:00 PM</div>
-        <div class="event-activity">🏨 Arrive &amp; Check-in at Best Western Frontier Motel</div>
-        <div class="event-location">📍 Lone Pine, CA</div>
+        <div class="event-time">10:15-10:30 PM</div>
+        <div class="event-activity">🏨 Hotel Check-in</div>
+        <div class="event-location">📍 Bakersfield Hotel (TBD)</div>
         <div class="event-details">
-          <p><strong>Check-in Tasks:</strong></p>
-          <ul>
-            <li>Quick check-in at front desk</li>
-            <li>Unload only essential overnight items (leave hiking gear for morning)</li>
-            <li>Very quick bedtime prep - brush teeth, pajamas</li>
-            <li><strong>Set alarm for 5:45 AM</strong> (important!)</li>
-            <li>Lay out warm clothes for morning (jacket, hat, gloves)</li>
-            <li>Review tomorrow's Death Valley route</li>
-          </ul>
+          <p><strong>Check-in Time:</strong> 10:15-10:30 PM</p>
+          <p><strong>Note:</strong> Rest up for early 5:45 AM wake-up tomorrow for Zabriskie Point sunrise!</p>
           
-          <div class="highlight">
-            <div class="highlight-title">⚠️ Important Note:</div>
-            <p>Late arrival means only 7-8 hours of sleep before early Death Valley sunrise departure. This is intentional - Zabriskie Point sunrise is worth it! Child may be tired but the experience is unforgettable. Plan for early bedtime tomorrow night to catch up.</p>
+          <div class="expandable">
+            <div class="expandable-header" onclick="toggleExpandable(this)">
+              <span>🏨 Recommended Bakersfield Hotels</span>
+              <span class="arrow">▶</span>
+            </div>
+            <div class="expandable-content">
+              <div style="margin-bottom: 16px; padding: 12px; background-color: var(--color-bg-1); border-radius: 6px;">
+                <div style="font-weight: 600; font-size: 16px; margin-bottom: 4px;">La Quinta Inn & Suites Bakersfield</div>
+                <div style="color: #f59e0b; margin-bottom: 8px;">⭐ 4.2/5</div>
+                <p><strong>Best For:</strong> Families, pet-friendly stays</p>
+                <p><strong>Address:</strong> 3232 Rosedale Highway, Bakersfield, CA</p>
+                <ul style="margin-left: 20px; margin-top: 8px;">
+                  <li>Family-friendly atmosphere</li>
+                  <li>Pet-friendly (no pet fees)</li>
+                  <li>Outdoor pool</li>
+                  <li>Free Wi-Fi</li>
+                  <li>Continental breakfast</li>
+                </ul>
+                <p><strong>Price Range:</strong> $$</p>
+              </div>
+
+              <div style="margin-bottom: 16px; padding: 12px; background-color: var(--color-bg-1); border-radius: 6px;">
+                <div style="font-weight: 600; font-size: 16px; margin-bottom: 4px;">Best Western Plus Bakersfield Inn</div>
+                <div style="color: #f59e0b; margin-bottom: 8px;">⭐ 4.3/5</div>
+                <p><strong>Best For:</strong> Families seeking convenient location</p>
+                <p><strong>Address:</strong> 2828 White Lane, Bakersfield, CA</p>
+                <ul style="margin-left: 20px; margin-top: 8px;">
+                  <li>Hot breakfast included</li>
+                  <li>Central location near restaurants</li>
+                  <li>Fitness center</li>
+                  <li>Free parking</li>
+                  <li>Kids stay free</li>
+                </ul>
+                <p><strong>Price Range:</strong> $$</p>
+              </div>
+
+              <div style="margin-bottom: 16px; padding: 12px; background-color: var(--color-bg-1); border-radius: 6px;">
+                <div style="font-weight: 600; font-size: 16px; margin-bottom: 4px;">Fairfield Inn & Suites Bakersfield</div>
+                <div style="color: #f59e0b; margin-bottom: 8px;">⭐ 4.4/5</div>
+                <p><strong>Best For:</strong> Families wanting modern comfort</p>
+                <p><strong>Address:</strong> 1704 Chester Ave, Bakersfield, CA</p>
+                <ul style="margin-left: 20px; margin-top: 8px;">
+                  <li>Modern amenities & clean rooms</li>
+                  <li>Fitness center</li>
+                  <li>Indoor pool</li>
+                  <li>Hot breakfast buffet</li>
+                  <li>24-hour business center</li>
+                </ul>
+                <p><strong>Price Range:</strong> $$$</p>
+              </div>
+
+              <div style="margin-bottom: 16px; padding: 12px; background-color: var(--color-bg-1); border-radius: 6px;">
+                <div style="font-weight: 600; font-size: 16px; margin-bottom: 4px;">Holiday Inn Express Bakersfield</div>
+                <div style="color: #f59e0b; margin-bottom: 8px;">⭐ 4.3/5</div>
+                <p><strong>Best For:</strong> Budget-conscious families</p>
+                <p><strong>Address:</strong> 2114 Olive Drive, Bakersfield, CA</p>
+                <ul style="margin-left: 20px; margin-top: 8px;">
+                  <li>Free Express Start breakfast</li>
+                  <li>Kids stay free</li>
+                  <li>Outdoor pool</li>
+                  <li>Business center</li>
+                  <li>Great value for money</li>
+                </ul>
+                <p><strong>Price Range:</strong> $$</p>
+              </div>
+            </div>
           </div>
-
-          <p><strong>Tomorrow Preview:</strong> 5:45 AM wake-up, 6:15 AM departure for Zabriskie Point sunrise (6:38 AM)</p>
         </div>
-      </div>
-
-      <div class="expandable">
-        <div class="expandable-header" onclick="toggleExpand(this)">
-          <span>📋 Day 0 Packing Checklist</span>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="expandable-content">
-          <h4>For the Car:</h4>
-          <ul>
-            <li>✓ Cooler with water bottles (at least 2 gallons)</li>
-            <li>✓ Snacks: trail mix, granola bars, fruit, crackers, cheese</li>
-            <li>✓ First aid kit</li>
-            <li>✓ Phone chargers and power bank</li>
-            <li>✓ Maps/GPS device backup</li>
-          </ul>
-          <h4>For Tomorrow's Sunrise:</h4>
-          <ul>
-            <li>✓ Warm jacket (45°F at sunrise)</li>
-            <li>✓ Hat and gloves</li>
-            <li>✓ Camera with extra batteries</li>
-            <li>✓ Tripod (optional but recommended)</li>
-            <li>✓ Headlamp or flashlight</li>
-            <li>✓ Sunglasses (for after sunrise)</li>
-          </ul>
-          <h4>Hiking Gear for Week:</h4>
-          <ul>
-            <li>✓ Sturdy hiking shoes (broken in!)</li>
-            <li>✓ Day backpack</li>
-            <li>✓ Sun hat and sunscreen (SPF 50+)</li>
-            <li>✓ Lip balm with SPF</li>
-            <li>✓ Trekking poles (optional)</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="expandable">
-        <div class="expandable-header" onclick="toggleExpand(this)">
-          <span>🍽️ Vegetarian Dining Summary - Day 0</span>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="expandable-content">
-          <p><strong>Lunch: Olives Mediterranean Market &amp; Grill, Gilroy</strong></p>
-          <ul>
-            <li>Mediterranean cuisine - naturally vegetarian-friendly</li>
-            <li>Falafel, hummus, fresh salads, grape leaves</li>
-            <li>Fresh, healthy, energizing for long drive</li>
-          </ul>
-          <p><strong>Dinner: Blue Elephant Thai, Bakersfield</strong></p>
-          <ul>
-            <li>Extensive vegetarian menu (8+ main dishes)</li>
-            <li>Vegan options clearly available</li>
-            <li>Staff knowledgeable about dietary needs</li>
-            <li>Award-winning restaurant with exceptional reviews</li>
-            <li>All vegetarian mains: $19</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="note-section">
-        <div class="note-title">📝 Personal Notes for Day 0:</div>
-        <textarea class="note-input" id="notes-day0" placeholder="Add your personal notes, reminders, or modifications here..."></textarea>
       </div>
     </div>
 
     <!-- DAY 1 -->
     <div class="day-section" data-day="1">
       <div class="day-header">
-        <div class="day-date">Day 1 - Monday, November 24, 2025</div>
-        <h2 class="day-title">Death Valley: Badlands Sunrise, Golden Canyon, Salt Flats</h2>
-        <div class="day-summary">🌄 Zabriskie Point Sunrise • 🥾 Golden Canyon Hike • 🧂 Badwater Basin • 🎨 Artist's Palette • 10 hours in park</div>
-        <div style="margin-top: 12px;">
-          <span class="badge badge-easy">Easy-Moderate</span>
-          <span class="badge badge-optional">Optional Extensions Available</span>
-        </div>
+        <div class="day-date">Day 1 - Tuesday, November 25, 2025</div>
+        <h2 class="day-title">Death Valley - Zabriskie Point & Golden Canyon</h2>
+        <div class="day-summary">🌅 Sunrise at Zabriskie Point • 🥾 Golden Canyon Hiking • 🏜️ Death Valley Exploration</div>
       </div>
 
       <div class="event">
         <div class="event-time">5:45 AM</div>
-        <div class="event-activity">☀️ Wake Up &amp; Quick Breakfast</div>
-        <div class="event-location">📍 Best Western Frontier Motel, Lone Pine</div>
+        <div class="event-activity">⏰ Wake Up & Quick Prep</div>
+        <div class="event-location">📍 Bakersfield Hotel</div>
         <div class="event-details">
-          <p><strong>Quick Morning Routine:</strong></p>
-          <ul>
-            <li>Wake up, get dressed in layers (starts at 45°F)</li>
-            <li>Grab quick breakfast from hotel lobby: bagels, pastries, coffee, juice</li>
-            <li>Pack day bag: water (2 liters per person), snacks, sunscreen, camera</li>
-            <li>Wear warm jacket - you'll remove layers as day warms</li>
-          </ul>
-          <p><strong>Why So Early:</strong> Zabriskie Point sunrise at 6:38 AM is 45 minutes away. Need to arrive 15-20 minutes early for parking and setup.</p>
+          <p><strong>Why So Early:</strong> Zabriskie Point sunrise is at 6:38 AM - one of the most iconic moments of the entire trip!</p>
+          <p><strong>Quick prep:</strong> Get dressed, grab hotel breakfast items to-go if available, fill water bottles.</p>
         </div>
       </div>
 
       <div class="event driving">
         <div class="event-time">6:15 AM</div>
         <div class="event-activity">🚗 Depart for Zabriskie Point</div>
-        <div class="event-location">📍 CA-190 East into Death Valley</div>
+        <div class="event-location">📍 Bakersfield → Death Valley</div>
         <div class="event-details">
-          <p><strong>Distance:</strong> ~40 miles, 45 minutes</p>
-          <p><strong>Route:</strong> US-395 S → CA-136 E → CA-190 E → Zabriskie Point</p>
-          <p><strong>What to Bring:</strong> Warm jacket, hat, gloves, camera, tripod, water</p>
-          <p><strong>Parking:</strong> Small lot - arrive early during holiday week. Overflow parking available nearby.</p>
+          <p><strong>Distance:</strong> ~145 miles to Death Valley entrance</p>
+          <p><strong>Duration:</strong> 2 hours 15 minutes</p>
+          <p><strong>Route:</strong> CA-58 E → CA-14 N → CA-178 E</p>
         </div>
       </div>
 
       <div class="event scenic">
-        <div class="event-time">7:00-7:30 AM ⭐ HIGHLIGHT</div>
-        <div class="event-activity">🌄 SUNRISE at Zabriskie Point</div>
-        <div class="event-location">📍 Zabriskie Point Overlook, Death Valley</div>
+        <div class="event-time">8:30-9:30 AM</div>
+        <div class="event-activity">🌅 Zabriskie Point Sunrise</div>
+        <div class="event-location">📍 Zabriskie Point, Death Valley</div>
         <div class="event-details">
-          <p><strong>Sunrise Time:</strong> 6:38 AM on November 24, 2025</p>
+          <p><strong>Note:</strong> While we missed the 6:38 AM official sunrise, morning light at 8:30 AM still provides excellent lighting and fewer crowds!</p>
           
           <div class="highlight">
-            <div class="highlight-title">⏰ Why This Timing is CRITICAL:</div>
-            <p><strong>Golden Hour Magic:</strong> The 15-20 minutes around sunrise provide light that only occurs twice per day. The low sun angle creates:</p>
+            <div class="highlight-title">What You'll See:</div>
             <ul>
-              <li>Longest shadows revealing 3D badlands texture</li>
-              <li>Colors transforming minute-by-minute: purple → pink → gold → yellow</li>
-              <li>Manly Beacon emerging from darkness like a beacon</li>
-              <li>Mountains "lighting up" as sun touches peaks first</li>
-            </ul>
-            <p><strong>Peak Light Window:</strong> Only 5-10 minutes of absolute peak color. By 7:15 AM, the magic fades. This is why we woke up at 5:45 AM!</p>
-          </div>
-
-          <div class="highlight">
-            <div class="highlight-title">🎯 What You'll See:</div>
-            <ul>
-              <li><strong>Manly Beacon:</strong> Prominent pyramid-shaped peak in center of view</li>
-              <li><strong>Badlands:</strong> Eroded, wrinkled landscape stretching for miles</li>
-              <li><strong>Black Mountains:</strong> Dark volcanic backdrop</li>
-              <li><strong>Color Transformation:</strong> Watch landscape "turn on" like a light switch</li>
-              <li><strong>Temperature:</strong> Starting at 45°F, warming to 55°F by 7:30 AM</li>
+              <li>Eroded badlands with deeply wrinkled texture</li>
+              <li>Manly Beacon - prominent pyramid-shaped peak</li>
+              <li>Golden and brown striations in morning light</li>
+              <li>Black Mountains backdrop</li>
             </ul>
           </div>
-
-          <p><strong>📸 Photography Tips:</strong></p>
-          <ul>
-            <li>Use tripod for sharp images in low light</li>
-            <li>Bracket exposures (dark, medium, bright) for best results</li>
-            <li>Capture sequence every 2-3 minutes to show transformation</li>
-            <li>Include people for scale (badlands are MASSIVE)</li>
-          </ul>
-
-          <p><strong>👨‍👩‍👧 Child Experience:</strong> This will be unforgettable - watching the world "turn on" in real-time. The colors changing every minute. The landscape emerging from darkness. Worth the early wake-up!</p>
+          
+          <p><strong>📸 Photography Tips:</strong> Use tripod for sharp images, capture the transformation of colors, include people for scale.</p>
+          <p><strong>Temperature:</strong> Cool 55-60°F - perfect for viewing</p>
         </div>
       </div>
 
       <div class="event hiking">
-        <div class="event-time">7:45-8:15 AM</div>
-        <div class="event-activity">🥾 Easy Badlands Walk</div>
-        <div class="event-location">📍 Zabriskie Point area</div>
+        <div class="event-time">10:00 AM-12:30 PM</div>
+        <div class="event-activity">🥾 Golden Canyon & Red Cathedral Hike</div>
+        <div class="event-location">📍 Golden Canyon Trailhead</div>
         <div class="event-details">
-          <p><strong>Distance:</strong> 0.5 miles, easy paved trail</p>
-          <p><strong>Duration:</strong> 20-30 minutes</p>
-          <p><strong>Difficulty:</strong> <span class="badge badge-easy">Easy</span> - Paved, flat, perfect for 9-year-old</p>
-          
-          <p><strong>What You'll See:</strong></p>
-          <ul>
-            <li>Close-up badlands textures and striations</li>
-            <li>Eroded mineral layers in yellow, brown, gold</li>
-            <li>Black Mountains backdrop</li>
-            <li>Different perspective than overlook view</li>
-          </ul>
-
-          <p><strong>Why This Timing:</strong> Cool morning temperature (45-50°F) perfect for walking. Best light for close-up photography. Before crowds arrive.</p>
-        </div>
-      </div>
-
-      <div class="event hiking">
-        <div class="event-time">8:30-11:00 AM ⭐ HIGHLIGHT</div>
-        <div class="event-activity">🥾 Golden Canyon &amp; Red Cathedral</div>
-        <div class="event-location">📍 Golden Canyon Trailhead, Death Valley</div>
-        <div class="event-details">
-          <div style="margin-bottom: 16px;">
-            <span class="badge badge-easy">Family Friendly Option</span>
+          <div style="margin-bottom: 12px;">
+            <span class="badge badge-easy">Family Friendly</span>
             <span class="badge badge-optional">Extended Option Available</span>
-          </div>
-
-          <div class="highlight">
-            <div class="highlight-title">⏰ Why Morning Timing:</div>
-            <ul>
-              <li><strong>Sun Angle:</strong> Morning sun illuminates canyon walls from front, not backlighting</li>
-              <li><strong>Temperature:</strong> Cool 55-65°F (perfect hiking weather)</li>
-              <li><strong>Crowds:</strong> Most visitors arrive midday - you'll have canyon mostly to yourselves</li>
-              <li><strong>Energy:</strong> Fresh after sunrise, before midday heat and fatigue</li>
-            </ul>
           </div>
 
           <p><strong>OPTION A - FAMILY FRIENDLY (Recommended):</strong></p>
           <ul>
-            <li><strong>Distance:</strong> 1.5-2 miles round trip to Red Cathedral viewpoint</li>
-            <li><strong>Duration:</strong> 2 hours total (1 hour hiking + 1 hour exploration)</li>
-            <li><strong>Difficulty:</strong> <span class="badge badge-easy">Easy</span> - Gradual incline, well-marked</li>
-            <li><strong>Elevation Gain:</strong> 300 feet (gentle slope)</li>
-          </ul>
-
-          <p><strong>OPTION B - EXTENDED LOOP (Only if Energized):</strong></p>
-          <ul>
-            <li><strong>Distance:</strong> 4.3 miles full Golden Canyon-Gower Gulch Loop</li>
-            <li><strong>Duration:</strong> 3-4 hours total</li>
-            <li><strong>Difficulty:</strong> <span class="badge badge-moderate">Moderate</span></li>
-            <li><strong>Note:</strong> Only attempt if 9-year-old is energized and enthusiastic</li>
+            <li><strong>Distance:</strong> 2 miles round trip to Red Cathedral</li>
+            <li><strong>Duration:</strong> 2-2.5 hours total</li>
+            <li><strong>Difficulty:</strong> Easy - Gradual incline, well-marked</li>
+            <li><strong>Elevation Gain:</strong> 300 feet</li>
           </ul>
 
           <div class="highlight">
-            <div class="highlight-title">🎯 What You'll See:</div>
+            <div class="highlight-title">What You'll See:</div>
             <ul>
-              <li><strong>Golden Canyon Walls:</strong> Towering golden/yellow cliffs glowing in morning sun</li>
-              <li><strong>Red Cathedral:</strong> Dramatic red-rock amphitheater (stunning photo spot)</li>
-              <li><strong>Side Canyons:</strong> Explore narrow slots and alcoves</li>
-              <li><strong>Badlands Views:</strong> Different perspective looking back at Manly Beacon</li>
-              <li><strong>Geology:</strong> See 5-million-year-old lake bed sediments up close</li>
+              <li>Golden-yellow canyon walls towering 50+ feet</li>
+              <li>Red Cathedral - massive crimson-red rock amphitheater</li>
+              <li>Mineral-rich striations in yellow, brown, burgundy</li>
+              <li>Narrow canyon passages and dramatic rock formations</li>
             </ul>
           </div>
 
-          <p><strong>📸 Photography:</strong> Canyon walls frame dramatic shots. Red Cathedral framed by golden walls is iconic Death Valley image.</p>
-
-          <p><strong>👨‍👩‍👧 Kid-Friendly Aspects:</strong> Like walking through giant sand castle. Lots to explore. Turnaround point is clear. Natural "room" feeling at Red Cathedral.</p>
-        </div>
-      </div>
-
-      <div class="event">
-        <div class="event-time">11:00-11:30 AM</div>
-        <div class="event-activity">🧃 Rest &amp; Snack Break</div>
-        <div class="event-location">📍 Shady spot near trailhead</div>
-        <div class="event-details">
-          <p><strong>Find Shade:</strong> Temperature now 60-65°F and rising. Find shaded spot at trailhead or in car with AC.</p>
-          <p><strong>Snacks to Eat:</strong></p>
-          <ul>
-            <li>Trail mix, granola bars, fruit</li>
-            <li>Crackers, cheese, vegetables</li>
-            <li>Plenty of water - everyone should drink 16+ oz</li>
-          </ul>
-          <p><strong>Why Important:</strong> Energy boost before afternoon activities. Rehydrate after 2-hour hike. Temperature warming significantly.</p>
-        </div>
-      </div>
-
-      <div class="event scenic">
-        <div class="event-time">12:15-1:00 PM</div>
-        <div class="event-activity">🏔️ Dante's View Overlook</div>
-        <div class="event-location">📍 Dante's View, 5,475 feet elevation</div>
-        <div class="event-details">
-          <p><strong>Drive:</strong> 25 miles from Golden Canyon, about 35 minutes</p>
-          
-          <div class="highlight">
-            <div class="highlight-title">🎯 What You'll See:</div>
-            <ul>
-              <li><strong>Badwater Basin:</strong> 5,757 feet below you - lowest point in North America</li>
-              <li><strong>Panamint Mountains:</strong> 11,000+ foot peaks to the west</li>
-              <li><strong>Entire Valley Geography:</strong> See how everything connects</li>
-              <li><strong>Clear Midday Light:</strong> Best visibility and understanding of landscape</li>
-              <li><strong>Temperature:</strong> Cooler at elevation (about 60°F vs 70°F in valley)</li>
-            </ul>
-          </div>
-
-          <p><strong>Why Midday:</strong> High sun provides best clarity. Cooler temperature at elevation is refreshing break. Understand geographic context before visiting Badwater Basin below.</p>
-
-          <p><strong>👨‍👩‍👧 Child Learning Moment:</strong> Explain elevation concept - you're 5,000+ feet up, Badwater is 282 feet BELOW sea level. That's over 1 mile of elevation difference!</p>
+          <p><strong>Perfect for 9-year-old:</strong> Easy terrain, fascinating geology, short distance</p>
         </div>
       </div>
 
       <div class="event dining">
-        <div class="event-time">1:00-2:00 PM</div>
-        <div class="event-activity">🥗 Lunch Break in Shade</div>
-        <div class="event-location">📍 Shaded picnic area near Furnace Creek</div>
+        <div class="event-time">12:30-1:30 PM</div>
+        <div class="event-activity">🍽️ Lunch Break</div>
+        <div class="event-location">📍 Furnace Creek or Packed Lunch</div>
         <div class="event-details">
-          <p><strong>Packed Lunch Items:</strong></p>
-          <ul>
-            <li>Sandwiches (made this morning or yesterday)</li>
-            <li>Fresh fruit (apples, oranges, grapes)</li>
-            <li>Vegetables and hummus</li>
-            <li>Chips or crackers</li>
-            <li>Plenty of water</li>
-          </ul>
-          <p><strong>Why Important:</strong> Midday hunger after morning hiking. Shade essential as temps now 70-75°F. Rest before afternoon salt flats visit.</p>
-          <p><strong>Location:</strong> Furnace Creek has shaded picnic tables, restrooms, and visitor center if needed.</p>
+          <p>Options: Furnace Creek General Store for snacks/deli sandwiches, or packed lunch from car cooler</p>
+          <p><strong>Rest time:</strong> Hydrate, reapply sunscreen, rest before afternoon activities</p>
         </div>
       </div>
 
       <div class="event scenic">
-        <div class="event-time">2:00-3:30 PM ⭐ HIGHLIGHT</div>
-        <div class="event-activity">🧂 Badwater Basin Salt Flats</div>
-        <div class="event-location">📍 Badwater Basin, -282 feet elevation (Lowest point in North America)</div>
+        <div class="event-time">2:00-3:00 PM</div>
+        <div class="event-activity">🎨 Artist's Palette Drive</div>
+        <div class="event-location">📍 Artist's Drive, Death Valley</div>
         <div class="event-details">
+          <p><strong>Distance:</strong> 9-mile one-way scenic drive</p>
+          <p><strong>Duration:</strong> 1 hour with stops</p>
+          
           <div class="highlight">
-            <div class="highlight-title">⏰ Why AFTERNOON Timing (Not Sunset):</div>
-            <p><strong>CRITICAL:</strong> Most people think sunset is best for salt flats. They're wrong for Death Valley!</p>
+            <div class="highlight-title">What You'll See:</div>
             <ul>
-              <li><strong>Midday/Early Afternoon Sun:</strong> Directly overhead shows white salt at maximum brilliance</li>
-              <li><strong>Hexagonal Polygons:</strong> Harsh overhead shadows reveal 3D texture and patterns</li>
-              <li><strong>Crystal Detail:</strong> Side-lighting from afternoon sun shows crystal formations</li>
-              <li><strong>Evening Light Problem:</strong> Low angle washes out polygon detail, flattens texture</li>
-            </ul>
-            <p><strong>This is the ONLY good time to visit Badwater!</strong> Evening makes it look flat and boring.</p>
-          </div>
-
-          <div class="highlight">
-            <div class="highlight-title">🎯 What You'll See:</div>
-            <ul>
-              <li><strong>Brilliant White Salt Crust:</strong> Stunning against blue sky</li>
-              <li><strong>Hexagonal Patterns:</strong> Natural geometric formations (like honeycomb)</li>
-              <li><strong>Crystal Formations:</strong> Salt crystals like tiny diamonds</li>
-              <li><strong>Panamint Mountains:</strong> 11,000 ft peaks backdrop</li>
-              <li><strong>Badwater Pool:</strong> Small spring creating temporary habitat</li>
+              <li>Multi-colored hills: pink, green, purple, yellow, turquoise</li>
+              <li>Mineral deposits creating natural "paint palette"</li>
+              <li>Best colors in afternoon light (perfect timing!)</li>
+              <li>Winding one-way road through colorful badlands</li>
             </ul>
           </div>
-
-          <p><strong>Activity Ideas:</strong></p>
-          <ul>
-            <li>Walk 0.5-1 mile out into salt pan on boardwalk then on salt</li>
-            <li>Examine hexagonal polygons up close</li>
-            <li>Take photos with mountain backdrop</li>
-            <li>Taste salt (it's real! But don't eat much)</li>
-            <li>Look for "sea level" sign high on cliff face</li>
-          </ul>
-
-          <p><strong>👨‍👩‍👧 Child Experience:</strong> Otherworldly landscape unlike anything they've seen. Walking on lowest point in North America. Understanding geology through touch and observation.</p>
-
-          <p><strong>Temperature:</strong> Warmest part of day at 75-80°F in late November (summer can be 120°F!). Bring water, wear sunscreen.</p>
         </div>
       </div>
 
       <div class="event scenic">
-        <div class="event-time">3:45-5:00 PM ⭐ HIGHLIGHT</div>
-        <div class="event-activity">🎨 Artist's Drive &amp; Artist's Palette</div>
-        <div class="event-location">📍 Artist's Drive scenic loop (9 miles one-way)</div>
+        <div class="event-time">3:30-4:15 PM</div>
+        <div class="event-activity">📍 Badwater Basin</div>
+        <div class="event-location">📍 Badwater Basin, Death Valley</div>
         <div class="event-details">
+          <p><strong>Elevation:</strong> 282 feet BELOW sea level - lowest point in North America!</p>
+          <p><strong>Duration:</strong> 45 minutes</p>
+          
           <div class="highlight">
-            <div class="highlight-title">⏰ Why LATE AFTERNOON is BEST:</div>
-            <p><strong>THIS IS THE BEST LIGHT OF ENTIRE TRIP FOR COLORS:</strong></p>
+            <div class="highlight-title">What You'll Experience:</div>
             <ul>
-              <li><strong>45-Degree Sun Angle:</strong> Perfect angle to illuminate colored minerals</li>
-              <li><strong>Peak Vibrance:</strong> Reds, yellows, greens, purples absolutely GLOW</li>
-              <li><strong>Side-Lighting:</strong> Reveals texture and depth in rock formations</li>
-              <li><strong>Magic Hour Approaching:</strong> Golden light enhances warm tones</li>
+              <li>Walk on hexagonal salt flats stretching to horizon</li>
+              <li>Look UP at cliff face to see "Sea Level" sign</li>
+              <li>Unique crunchy salt crystals underfoot</li>
+              <li>Surreal landscape unlike anywhere else on Earth</li>
             </ul>
-            <p><strong>Midday:</strong> Colors washed out by overhead sun. <strong>Morning:</strong> Backlit, colors muted. <strong>Late afternoon:</strong> PERFECT!</p>
           </div>
-
-          <div class="highlight">
-            <div class="highlight-title">🎯 What You'll See at Artist's Palette:</div>
-            <ul>
-              <li><strong>Vibrant Reds:</strong> Iron oxides (rust) in volcanic rocks</li>
-              <li><strong>Bright Yellows:</strong> Sulfur compounds</li>
-              <li><strong>Emerald Greens:</strong> Chlorite minerals</li>
-              <li><strong>Deep Purples:</strong> Manganese oxides</li>
-              <li><strong>Pink &amp; Orange:</strong> Mixed iron compounds</li>
-            </ul>
-            <p>It literally looks like an artist's palette with paint splotches!</p>
-          </div>
-
-          <p><strong>📸 Photography:</strong></p>
-          <ul>
-            <li>Best color photography opportunity of entire trip</li>
-            <li>Bring tripod if you have one</li>
-            <li>Wait for clouds (if any) for dramatic sky contrast</li>
-            <li>Multiple viewpoints along drive - stop at all of them</li>
-            <li>Colors change as sun angle shifts - keep shooting</li>
-          </ul>
-
-          <p><strong>Drive Details:</strong></p>
-          <ul>
-            <li>9-mile one-way scenic drive (allow 1+ hour)</li>
-            <li>Multiple pullouts and viewpoints</li>
-            <li>Artist's Palette is the highlight midway through</li>
-            <li>Narrow road - drive slowly, enjoy views</li>
-          </ul>
-
-          <p><strong>👨‍👩‍👧 Child Experience:</strong> Real-world science lesson in geology and chemistry. Colors are so vibrant they look fake! Like driving through a painting.</p>
+          
+          <p><strong>Kid-friendly:</strong> Short walk (0.5 mile), flat, fascinating geology</p>
         </div>
       </div>
 
       <div class="event driving">
-        <div class="event-time">5:30-6:30 PM</div>
-        <div class="event-activity">🚗 Return Drive to Lone Pine</div>
-        <div class="event-location">📍 CA-190 West → CA-136 West → US-395 North</div>
+        <div class="event-time">5:00-6:30 PM</div>
+        <div class="event-activity">🚗 Drive to Lone Pine</div>
+        <div class="event-location">📍 Death Valley → Lone Pine, CA</div>
         <div class="event-details">
-          <p><strong>Distance:</strong> ~40 miles, 45 minutes to 1 hour</p>
-          <p><strong>Sunset Time:</strong> 4:54 PM - already past, but beautiful dusk light</p>
-          <p><strong>What You'll See:</strong></p>
-          <ul>
-            <li>Gorgeous dusk colors over Sierra Nevada</li>
-            <li>Mountains silhouetted against pink/purple sky</li>
-            <li>Driving west gives you golden light ahead</li>
-            <li>Desert landscape in blue hour light</li>
-          </ul>
-          <p><strong>Decompression Time:</strong> Discuss day's highlights, what everyone loved most, tomorrow's plans.</p>
-        </div>
-      </div>
-
-      <div class="event">
-        <div class="event-time">7:00 PM</div>
-        <div class="event-activity">🏨 Arrive Lone Pine - Freshen Up</div>
-        <div class="event-location">📍 Best Western Frontier Motel</div>
-        <div class="event-details">
-          <p><strong>Quick Break:</strong></p>
-          <ul>
-            <li>Use restrooms, wash hands/face</li>
-            <li>Change out of hiking clothes if desired</li>
-            <li>Rest for 15-20 minutes</li>
-            <li>Review dinner options</li>
-          </ul>
+          <p><strong>Distance:</strong> 80 miles</p>
+          <p><strong>Duration:</strong> 1.5 hours</p>
+          <p><strong>Route:</strong> CA-190 W, stunning mountain pass drive</p>
         </div>
       </div>
 
       <div class="event dining">
-        <div class="event-time">7:30 PM</div>
+        <div class="event-time">6:30-7:45 PM</div>
         <div class="event-activity">🍽️ Dinner in Lone Pine</div>
-        <div class="event-location">📍 Margie's Merry Go-Round OR The Grill</div>
+        <div class="event-location">📍 Lone Pine, CA</div>
         <div class="event-details">
-          <p><strong>Restaurant Options (both vegetarian-friendly):</strong></p>
-          
-          <p><strong>Margie's Merry Go-Round:</strong></p>
-          <ul>
-            <li>Classic American diner</li>
-            <li>Vegetarian options: veggie burgers, salads, pasta, grilled cheese</li>
-            <li>Kid-friendly atmosphere</li>
-            <li>Quick service</li>
-          </ul>
-
-          <p><strong>The Grill:</strong></p>
-          <ul>
-            <li>Casual dining</li>
-            <li>Vegetarian dishes, fried rice, vegetable stir-fry</li>
-            <li>Larger portions</li>
-            <li>Comfortable booths</li>
-          </ul>
-
-          <p><strong>Why Early Dinner:</strong> After full day of hiking and exploring, everyone will be hungry and ready to eat. Child may be tired but excited about day's experiences.</p>
+          <p><strong>Recommended:</strong> Alabama Hills Cafe or Seasons Restaurant</p>
+          <p>Relax after full day of Death Valley exploration</p>
         </div>
       </div>
 
       <div class="event">
-        <div class="event-time">9:00 PM</div>
-        <div class="event-activity">😴 Bedtime</div>
-        <div class="event-location">📍 Best Western</div>
+        <div class="event-time">8:00 PM</div>
+        <div class="event-activity">🏨 Hotel Check-in & Rest</div>
+        <div class="event-location">📍 Lone Pine Hotel</div>
         <div class="event-details">
-          <p><strong>Evening Routine:</strong></p>
-          <ul>
-            <li>Showers and getting ready for bed</li>
-            <li>Review photos from today</li>
-            <li>Discuss favorite moments</li>
-            <li>Set alarm for 5:45 AM again (another sunrise tomorrow!)</li>
-            <li>Pack day bag for tomorrow: Mesquite Flat Sand Dunes</li>
-            <li>Lay out warm clothes again</li>
-          </ul>
-          
-          <div class="highlight">
-            <div class="highlight-title">Tomorrow Preview:</div>
-            <p><strong>Day 2:</strong> Mesquite Flat Sand Dunes sunrise (different experience!), Mosaic Canyon, Ubehebe Volcanic Crater. Another early 5:45 AM wake-up but totally worth it.</p>
-          </div>
+          <p>Rest up for tomorrow's Mount Whitney hike!</p>
         </div>
-      </div>
-
-      <div class="expandable">
-        <div class="expandable-header" onclick="toggleExpand(this)">
-          <span>📊 Day 1 Quick Stats</span>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="expandable-content">
-          <ul>
-            <li><strong>Total Time in Park:</strong> 10 hours (7:00 AM - 5:30 PM)</li>
-            <li><strong>Total Hiking:</strong> 2-3.5 miles depending on option chosen</li>
-            <li><strong>Elevation Range:</strong> -282 feet (Badwater) to 5,475 feet (Dante's View)</li>
-            <li><strong>Temperature Range:</strong> 45°F (sunrise) to 75-80°F (afternoon)</li>
-            <li><strong>Key Highlights:</strong> Zabriskie Point sunrise, Golden Canyon, Badwater Basin, Artist's Palette</li>
-            <li><strong>Photography Opportunities:</strong> 5 major spots with optimal lighting</li>
-            <li><strong>Difficulty:</strong> Easy to Moderate (perfect for 9-year-old with options)</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="expandable">
-        <div class="expandable-header" onclick="toggleExpand(this)">
-          <span>💡 Why This Timing Matters - Day 1 Deep Dive</span>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="expandable-content">
-          <h4>Zabriskie Point - 7:00 AM Sunrise:</h4>
-          <p>Only 5-10 minutes of peak golden hour color. Shadows longest. Badlands emerge from darkness. Literally watching world "turn on." Miss this by 30 minutes and magic is gone.</p>
-
-          <h4>Golden Canyon - 8:30 AM Start:</h4>
-          <p>Sun illuminates canyon walls from front (not backlighting). Temperature still cool (60s). Most tourists arrive midday. You'll have canyon to yourselves. Later means harsh overhead sun and heat.</p>
-
-          <h4>Badwater Basin - 2:00 PM Midday:</h4>
-          <p>Overhead sun makes white salt GLOW. Hexagonal polygons revealed by harsh shadows. Evening light washes this out completely. This is counterintuitive but absolutely critical!</p>
-
-          <h4>Artist's Palette - 3:45 PM Late Afternoon:</h4>
-          <p>45-degree sun angle creates peak color vibrance. Reds, yellows, greens GLOW. Morning = backlit/muted. Midday = washed out. Late afternoon = PERFECT. Best light window is 3:30-5:00 PM.</p>
-
-          <p><strong>Bottom Line:</strong> Every location is timed for optimal light, temperature, and experience. This isn't random - it's engineered for maximum wow factor!</p>
-        </div>
-      </div>
-
-      <div class="note-section">
-        <div class="note-title">📝 Personal Notes for Day 1:</div>
-        <textarea class="note-input" id="notes-day1" placeholder="Add your personal notes, reminders, or modifications here..."></textarea>
       </div>
     </div>
 
@@ -1209,7 +863,7 @@
 
       <div class="event">
         <div class="event-time">5:45 AM</div>
-        <div class="event-activity">☀️ Wake Up &amp; Quick Breakfast</div>
+        <div class="event-activity">☀️ Wake Up & Quick Breakfast</div>
         <div class="event-location">📍 Best Western Frontier Motel</div>
         <div class="event-details">
           <p>Same routine as yesterday: Quick breakfast, pack day bag, dress in layers. Today's sunrise will be completely different - you're standing ON the dunes!</p>
@@ -1217,7 +871,7 @@
       </div>
 
       <div class="event scenic">
-        <div class="event-time">7:00-8:30 AM ⭐ HIGHLIGHT</div>
+        <div class="event-time">6:45-8:30 AM ⭐ HIGHLIGHT</div>
         <div class="event-activity">🏜️ Mesquite Flat Sand Dunes Sunrise</div>
         <div class="event-location">📍 Mesquite Flat Sand Dunes, Death Valley</div>
         <div class="event-details">
@@ -1349,28 +1003,78 @@
         </div>
       </div>
 
-      <div class="event">
-        <div class="event-time">10:00 AM-4:00 PM</div>
-        <div class="event-activity">Flexible Death Valley Exploration</div>
+      <div class="event scenic">
+        <div class="event-time">10:00 AM-12:00 PM</div>
+        <div class="event-activity">🎨 Natural Bridge Canyon</div>
+        <div class="event-location">📍 Natural Bridge Canyon, Death Valley</div>
         <div class="event-details">
-          <p><strong>Suggested Activities (pick 2-3):</strong></p>
-          <ul>
-            <li>Return to favorite viewpoint with different light</li>
-            <li>Natural Bridge hike (easy 1-mile)</li>
-            <li>Devil's Golf Course (salt formations)</li>
-            <li>Furnace Creek Visitor Center</li>
-            <li>More time at sand dunes</li>
-            <li>Swimming pool at hotel (afternoon)</li>
-          </ul>
-          <p><strong>Lunch:</strong> Packed lunch or Furnace Creek restaurant for a treat</p>
+          <p><strong>Distance:</strong> 2 miles round trip (1 mile each way)</p>
+          <p><strong>Difficulty:</strong> <span class="badge badge-easy">Easy</span> - Flat canyon walk on gravel road</p>
+          
+          <div class="highlight">
+            <div class="highlight-title">🎯 What You'll See:</div>
+            <ul>
+              <li><strong>Natural Bridge:</strong> 35-foot rock arch spanning canyon</li>
+              <li><strong>Striped Canyon Walls:</strong> Red, yellow, brown sedimentary layers</li>
+              <li><strong>Dry Falls:</strong> Evidence of ancient waterfalls carved in rock</li>
+              <li><strong>Desert Varnish:</strong> Dark mineral staining on cliff faces</li>
+            </ul>
+          </div>
+
+          <p><strong>Perfect for 9-year-old:</strong> Short, easy walk. Cool destination (the natural bridge). Shaded canyon provides relief from sun.</p>
+          
+          <p><strong>Photography:</strong> Bridge is dramatic - best photos looking back toward entrance with mountains framed through arch.</p>
         </div>
       </div>
 
-      <div class="event dining">
-        <div class="event-time">6:00 PM</div>
-        <div class="event-activity">🍽️ Dinner in Lone Pine</div>
+      <div class="event scenic">
+        <div class="event-time">1:00-2:30 PM</div>
+        <div class="event-activity">⚡ Devil's Golf Course</div>
+        <div class="event-location">📍 Devil's Golf Course, Death Valley</div>
         <div class="event-details">
-          <p>Relaxed dinner. Early bedtime to rest for tomorrow's Mount Whitney adventure.</p>
+          <p><strong>Duration:</strong> 30-45 minutes</p>
+          <p><strong>Activity Level:</strong> <span class="badge badge-easy">Easy</span> - Short walk from parking, mostly viewing</p>
+          
+          <div class="highlight">
+            <div class="highlight-title">🎯 What Makes This Unique:</div>
+            <ul>
+              <li><strong>Jagged Salt Formations:</strong> Sharp, crystalline salt pinnacles jutting from ground</li>
+              <li><strong>Cracking Sounds:</strong> Salt crystals expanding/contracting - listen closely!</li>
+              <li><strong>Otherworldly Landscape:</strong> Looks like alien planet</li>
+              <li><strong>Pure Sodium Chloride:</strong> 95%+ pure salt covering basin floor</li>
+            </ul>
+          </div>
+
+          <p><strong>Name Origin:</strong> "Only the devil could play golf" on this rough, jagged surface!</p>
+          
+          <p><strong>Kid Experience:</strong> Fascinating to walk on crunchy salt. Very different from Badwater's smooth flats. Short enough to keep attention.</p>
+        </div>
+      </div>
+
+      <div class="event scenic">
+        <div class="event-time">3:00-4:00 PM</div>
+        <div class="event-activity">🏛️ Furnace Creek Visitor Center</div>
+        <div class="event-location">📍 Furnace Creek, Death Valley</div>
+        <div class="event-details">
+          <p><strong>Activities:</strong></p>
+          <ul>
+            <li>Watch orientation film about Death Valley geology and history</li>
+            <li>Explore museum exhibits on desert life, mining history, geology</li>
+            <li>Junior Ranger program for kids (activity booklets available)</li>
+            <li>Air conditioning! (welcome relief)</li>
+            <li>Gift shop for souvenirs and postcards</li>
+          </ul>
+
+          <p><strong>Why Include This:</strong> Educational break. Kids learn what they've been seeing. Junior Ranger badge is fun takeaway. Also: restrooms, water refill, rest from heat.</p>
+        </div>
+      </div>
+
+      <div class="event driving">
+        <div class="event-time">5:00-6:00 PM</div>
+        <div class="event-activity">🚗 Drive to Ridgecrest/Bishop</div>
+        <div class="event-details">
+          <p><strong>Overnight location:</strong> Ridgecrest or Bishop (closer to Mount Whitney for Day 4)</p>
+          <p>Leave Death Valley relaxed and satisfied. Tomorrow: Mount Whitney!</p>
         </div>
       </div>
 
@@ -1383,71 +1087,150 @@
     <!-- DAY 4 -->
     <div class="day-section" data-day="4">
       <div class="day-header">
-        <div class="day-date">Day 4 - Thursday, November 27, 2025 - THANKSGIVING</div>
+        <div class="day-date">Day 4 - Thursday, November 27, 2025 (Thanksgiving)</div>
         <h2 class="day-title">Mount Whitney Corridor &amp; Alabama Hills</h2>
-        <div class="day-summary">🦃 Thanksgiving! • 🏔️ Mount Whitney Trail • 🏜️ Alabama Hills • Family-friendly day</div>
+        <div class="day-summary">🏔️ Mount Whitney Portal • 🎬 Alabama Hills • 🌄 Thanksgiving in Nature</div>
         <div style="margin-top: 12px;">
           <span class="badge badge-easy">Easy-Moderate</span>
-          <span class="badge badge-optional">Flexible Distance</span>
-        </div>
-      </div>
-
-      <div class="event hiking">
-        <div class="event-time">9:00 AM-2:00 PM</div>
-        <div class="event-activity">🏔️ Mount Whitney Trail to Lone Pine Lake</div>
-        <div class="event-location">📍 Whitney Portal (8,360 feet elevation)</div>
-        <div class="event-details">
-          <p><strong>Distance:</strong> 5.1 miles round trip to Lone Pine Lake</p>
-          <p><strong>Elevation Gain:</strong> 1,600 feet</p>
-          <p><strong>Difficulty:</strong> <span class="badge badge-moderate">Moderate</span> - Steady uphill, well-maintained trail</p>
-
-          <div class="highlight">
-            <div class="highlight-title">🎯 What You'll See:</div>
-            <ul>
-              <li><strong>Alpine Forest:</strong> Pine and fir trees, mountain scenery</li>
-              <li><strong>Lone Pine Creek:</strong> Rushing mountain stream</li>
-              <li><strong>Granite Formations:</strong> Sierra Nevada geology</li>
-              <li><strong>Lone Pine Lake:</strong> Beautiful alpine lake (if you reach it)</li>
-              <li><strong>Mount Whitney Views:</strong> Tallest peak in lower 48 (14,505 ft)</li>
-            </ul>
-          </div>
-
-          <p><strong>Family Option:</strong> Go as far as feels comfortable. Even 1-2 miles provides beautiful mountain experience. Natural turnarounds along the way.</p>
-
-          <p><strong>Weather:</strong> May have snow on trail. Check conditions. Bring layers, warm clothes.</p>
-        </div>
-      </div>
-
-      <div class="event dining">
-        <div class="event-time">3:00 PM</div>
-        <div class="event-activity">🦃 Thanksgiving Dinner</div>
-        <div class="event-location">📍 Lone Pine - Restaurant reservations recommended!</div>
-        <div class="event-details">
-          <p><strong>Options:</strong></p>
-          <ul>
-            <li>Season's Restaurant (if taking Thanksgiving reservations)</li>
-            <li>Nearby Bishop restaurants (30 minutes north)</li>
-            <li>Special Thanksgiving meal at hotel</li>
-          </ul>
-          <p><strong>Call ahead:</strong> Thanksgiving reservations fill up! Book early.</p>
+          <span class="badge badge-optional">Flexible Hikes</span>
         </div>
       </div>
 
       <div class="event scenic">
-        <div class="event-time">5:00-6:00 PM</div>
-        <div class="event-activity">🌄 Alabama Hills Sunset</div>
-        <div class="event-location">📍 Alabama Hills Recreation Area</div>
+        <div class="event-time">8:00-11:00 AM</div>
+        <div class="event-activity">🏔️ Mount Whitney Portal</div>
+        <div class="event-location">📍 Whitney Portal Road, Lone Pine</div>
         <div class="event-details">
+          <p><strong>Drive:</strong> 13-mile scenic drive from Lone Pine, gaining 4,000 feet elevation</p>
+          
+          <div class="highlight">
+            <div class="highlight-title">⏰ Why This Timing:</div>
+            <ul>
+              <li><strong>Morning Light:</strong> Best lighting on eastern face of Sierra peaks</li>
+              <li><strong>Cool Temperature:</strong> Portal at 8,360 ft - significantly cooler than valley</li>
+              <li><strong>Before Crowds:</strong> Hikers start early, but 8 AM is quieter at portal store</li>
+              <li><strong>Fresh Energy:</strong> Tackle elevation gain when everyone is rested</li>
+            </ul>
+          </div>
+
           <div class="highlight">
             <div class="highlight-title">🎯 What You'll See:</div>
             <ul>
-              <li><strong>Iconic Rock Formations:</strong> Rounded granite boulders</li>
-              <li><strong>Movie Location:</strong> Over 400 films shot here</li>
-              <li><strong>Sunset Light:</strong> Rocks glow orange/red, Sierra Nevada backdrop</li>
-              <li><strong>Easy Exploration:</strong> Short walks, scrambling on rocks</li>
+              <li><strong>Mount Whitney:</strong> Tallest peak in contiguous US (14,505 ft) - view from portal</li>
+              <li><strong>Dramatic Eastern Sierra:</strong> Sheer granite peaks rising 10,000+ feet from valley floor</li>
+              <li><strong>Alpine Environment:</strong> Jeffrey pines, mountain streams, granite boulders</li>
+              <li><strong>Whitney Portal Store:</strong> Historic mountaineering supply shop, famous breakfast burritos</li>
+              <li><strong>Elevation Experience:</strong> At 8,360 ft - thin air, cool temps, mountain atmosphere</li>
             </ul>
           </div>
-          <p><strong>Perfect ending to Thanksgiving Day!</strong> Easy, beautiful, kid will love climbing on rocks.</p>
+
+          <p><strong>FAMILY HIKING OPTIONS:</strong></p>
+          
+          <p><strong>Option A - Ultra Easy (Recommended for 9-year-old):</strong></p>
+          <ul>
+            <li>Walk 0.2-0.5 miles on Mount Whitney Trail</li>
+            <li>Turn around at any point</li>
+            <li>Just to say "we hiked Mount Whitney Trail!"</li>
+            <li>Return to portal store for treats</li>
+            <li><strong>Duration:</strong> 30-45 minutes total</li>
+          </ul>
+
+          <p><strong>Option B - Moderate (Only if 14-year-old insists):</strong></p>
+          <ul>
+            <li>Hike 2.8 miles to Lone Pine Lake</li>
+            <li>Beautiful alpine lake destination</li>
+            <li><strong>Warning:</strong> Steep, gaining 1,800 feet elevation</li>
+            <li>Too much for 9-year-old after 3 days of hiking</li>
+            <li>Would consume most of morning (4-5 hours round trip)</li>
+          </ul>
+
+          <p><strong>RECOMMENDED PLAN:</strong> Drive up, enjoy views, short 0.5-mile walk, visit portal store, save energy for Alabama Hills (the real highlight of today).</p>
+          
+          <p><strong>Portal Store:</strong> Famous mountaineering supply shop. Breakfast burritos are legendary (huge!). Great souvenirs, hiking gear, books about Whitney. Historic photos on walls.</p>
+        </div>
+      </div>
+
+      <div class="event scenic">
+        <div class="event-time">12:00-3:30 PM ⭐ HIGHLIGHT</div>
+        <div class="event-activity">🎬 Alabama Hills Exploration</div>
+        <div class="event-location">📍 Alabama Hills Recreation Area</div>
+        <div class="event-details">
+          <div class="highlight">
+            <div class="highlight-title">🎬 Hollywood History:</div>
+            <p>Alabama Hills is one of the most filmed locations in America - over 400 movies and TV shows shot here since 1920s. Rounded orange granite boulders contrast dramatically with jagged Sierra Nevada peaks behind, creating iconic "Old West" backdrop.</p>
+            <p><strong>Famous Films:</strong> The Lone Ranger (1940s-50s), How the West Was Won, Star Trek V, Gladiator, Iron Man, Django Unchained, Westworld (HBO), countless classic Westerns</p>
+          </div>
+
+          <div class="highlight">
+            <div class="highlight-title">🎯 What Makes This Special:</div>
+            <ul>
+              <li><strong>Unique Geology:</strong> Rounded granite "potato boulders" formed by weathering over millions of years</li>
+              <li><strong>Sierra Backdrop:</strong> Mount Whitney visible behind boulders - tallest peak framed by golden rocks</li>
+              <li><strong>Endless Arches:</strong> Natural rock arches and windows throughout the hills</li>
+              <li><strong>Natural Playground:</strong> Boulders perfect for scrambling, exploring, climbing</li>
+              <li><strong>360° Beauty:</strong> Every direction offers stunning landscape photography</li>
+            </ul>
+          </div>
+
+          <p><strong>MUST-DO ACTIVITY #1: Mobius Arch Loop</strong></p>
+          <ul>
+            <li><strong>Distance:</strong> 0.6 miles round trip</li>
+            <li><strong>Duration:</strong> 30-45 minutes</li>
+            <li><strong>Difficulty:</strong> <span class="badge badge-easy">Easy</span> - Nearly flat, well-marked trail</li>
+            <li><strong>The Payoff:</strong> Natural stone arch framing Mount Whitney perfectly - one of most photographed spots in Eastern Sierra!</li>
+            <li><strong>Best Photo:</strong> Stand under arch, Whitney peaks visible through opening</li>
+          </ul>
+
+          <p><strong>MUST-DO ACTIVITY #2: Movie Road Scenic Drive</strong></p>
+          <ul>
+            <li><strong>Distance:</strong> 2.7-mile dirt loop through heart of Alabama Hills</li>
+            <li><strong>Duration:</strong> 30-45 minutes with stops</li>
+            <li><strong>Highlights:</strong> Pullouts at famous filming locations, interpretive signs identifying movies shot there</li>
+            <li><strong>Accessibility:</strong> Graded dirt road (fine for regular cars, drive slowly)</li>
+          </ul>
+
+          <p><strong>MUST-DO ACTIVITY #3: Boulder Exploration & Scrambling</strong></p>
+          <ul>
+            <li>Let kids explore! Boulders are safe for climbing</li>
+            <li>Find natural arches, caves, tunnels between rocks</li>
+            <li>Play hide-and-seek among formations</li>
+            <li>Take silly photos climbing on giant rocks</li>
+            <li><strong>This is why kids LOVE Alabama Hills</strong> - it's like a giant natural jungle gym!</li>
+          </ul>
+
+          <div class="highlight">
+            <div class="highlight-title">📸 Photography Gold Mine:</div>
+            <p><strong>Iconic Shots to Capture:</strong></p>
+            <ul>
+              <li>Mobius Arch framing Mount Whitney (the classic shot)</li>
+              <li>Kids climbing on giant rounded boulders</li>
+              <li>Sierra peaks as backdrop to golden rocks</li>
+              <li>Natural arches and windows throughout</li>
+              <li>Sunset lighting (if you stay late) turns rocks golden-orange</li>
+            </ul>
+          </div>
+
+          <p><strong>👨‍👩‍👧‍👦 Why This Is THE Family Highlight:</strong></p>
+          <ul>
+            <li><strong>Fun Factor:</strong> Kids can actually PLAY here (unlike most scenic stops)</li>
+            <li><strong>Easy Access:</strong> Short walks, no strenuous hiking</li>
+            <li><strong>Variety:</strong> Combine scenic driving, easy walking, rock scrambling, photography</li>
+            <li><strong>Different Vibe:</strong> Completely different from Death Valley - golden rocks vs. desert</li>
+            <li><strong>Movie Magic:</strong> Kids love knowing they're standing where famous movies were filmed</li>
+          </ul>
+
+          <p><strong>Time Allocation:</strong> Spend 3+ hours here. It's worth it. This is a highlight, not just a stop.</p>
+        </div>
+      </div>
+
+      <div class="event dining">
+        <div class="event-time">5:00-7:00 PM</div>
+        <div class="event-activity">🦃 Thanksgiving Dinner</div>
+        <div class="event-location">📍 Lone Pine or Bishop</div>
+        <div class="event-details">
+          <p><strong>Note:</strong> Make reservations in advance! Many restaurants closed or busy on Thanksgiving.</p>
+          <p><strong>Options:</strong> Season's Restaurant (Lone Pine) may have Thanksgiving menu, or drive to Bishop for more options.</p>
+          <p>Give thanks for incredible journey so far! 4 days of amazing adventures.</p>
         </div>
       </div>
 
@@ -1461,49 +1244,200 @@
     <div class="day-section" data-day="5">
       <div class="day-header">
         <div class="day-date">Day 5 - Friday, November 28, 2025</div>
-        <h2 class="day-title">Drive to Mammoth Lakes</h2>
-        <div class="day-summary">🚗 Scenic drive north • 🏔️ High Sierra scenery • Check-in at Mammoth • 115 miles</div>
-      </div>
-
-      <div class="event driving">
-        <div class="event-time">9:00 AM-12:00 PM</div>
-        <div class="event-activity">🚗 Drive Lone Pine to Mammoth Lakes</div>
-        <div class="event-location">📍 US-395 North - Scenic highway</div>
-        <div class="event-details">
-          <p><strong>Distance:</strong> 115 miles, approximately 2.5 hours (with stops)</p>
-          <p><strong>What You'll See:</strong></p>
-          <ul>
-            <li>Owens Valley - high desert valley between two mountain ranges</li>
-            <li>Sierra Nevada mountains on west, White Mountains on east</li>
-            <li>Possible stops: Bishop (coffee/snacks), Crowley Lake viewpoint</li>
-          </ul>
-          <p><strong>Arrive Mammoth Lakes:</strong> Check-in at accommodation, explore town</p>
+        <h2 class="day-title">Drive to Mammoth Lakes via Scenic Stops</h2>
+        <div class="day-summary">🚗 US-395 Scenic Drive • 🏔️ Convict Lake • 🌡️ Hot Creek • 🏨 Mammoth Village</div>
+        <div style="margin-top: 12px;">
+          <span class="badge badge-easy">Easy Day</span>
+          <span class="badge badge-optional">Flexible Stops</span>
         </div>
       </div>
 
-      <div class="event hiking">
-        <div class="event-time">2:00-5:00 PM</div>
-        <div class="event-activity">Explore Mammoth Lakes Area</div>
+      <div class="event">
+        <div class="event-time">8:30 AM</div>
+        <div class="event-activity">🌄 Leisurely Morning</div>
+        <div class="event-location">📍 Lone Pine/Bishop Hotel</div>
         <div class="event-details">
-          <p><strong>Suggested Activities:</strong></p>
+          <p><strong>Finally a relaxed morning!</strong> Sleep in, enjoy full hotel breakfast, pack leisurely. Today is a driving day with beautiful stops - no rush.</p>
+          <p><strong>Check out by 9:30 AM.</strong> Fuel up car, grab snacks for drive.</p>
+        </div>
+      </div>
+
+      <div class="event driving">
+        <div class="event-time">9:30-10:30 AM</div>
+        <div class="event-activity">🚗 Scenic Drive: Bishop → Convict Lake Area</div>
+        <div class="event-location">📍 US-395 North</div>
+        <div class="event-details">
+          <p><strong>Distance:</strong> 35 miles, 45 minutes</p>
+          <p><strong>Route:</strong> US-395 North - one of America's most scenic highways</p>
+          
+          <div class="highlight">
+            <div class="highlight-title">What You'll See Along the Way:</div>
+            <ul>
+              <li><strong>Eastern Sierra Wall:</strong> Continuous wall of 13,000-14,000 ft peaks to your left</li>
+              <li><strong>Volcanic Tablelands:</strong> Ancient lava flows creating flat mesas</li>
+              <li><strong>Owens River Valley:</strong> High desert valley floor at 4,000 ft elevation</li>
+              <li><strong>Mountain Town Vibes:</strong> Small communities nestled against Sierra</li>
+            </ul>
+          </div>
+
+          <p><strong>Tip:</strong> Keep camera ready - pull over at any scenic turnout that catches your eye!</p>
+        </div>
+      </div>
+
+      <div class="event scenic">
+        <div class="event-time">10:30 AM-12:00 PM</div>
+        <div class="event-activity">🏔️ Convict Lake Stop</div>
+        <div class="event-location">📍 Convict Lake Recreation Area</div>
+        <div class="event-details">
+          <p><strong>Duration:</strong> 1-1.5 hours</p>
+          <p><strong>Elevation:</strong> 7,583 feet</p>
+          
+          <div class="highlight">
+            <div class="highlight-title">⭐ Why This Stop is Special:</div>
+            <ul>
+              <li><strong>Dramatic Backdrop:</strong> Towering peaks (Mount Morrison 12,268 ft) plunge directly into turquoise lake</li>
+              <li><strong>Perfect Reflection:</strong> Mountain reflections in calm morning water</li>
+              <li><strong>Accessible Beauty:</strong> Short walk from parking to stunning views</li>
+              <li><strong>Photography Gold:</strong> One of most photographed lakes in Eastern Sierra</li>
+            </ul>
+          </div>
+
+          <p><strong>FAMILY ACTIVITY - Lakeside Walk:</strong></p>
           <ul>
-            <li>Lake Mary or Lake George shoreline walk</li>
-            <li>Minaret Vista viewpoint</li>
-            <li>Town exploration and dinner planning</li>
+            <li><strong>Distance:</strong> 0.5-2.7 miles (you choose turnaround)</li>
+            <li><strong>Difficulty:</strong> <span class="badge badge-easy">Easy</span> - Flat trail along shoreline</li>
+            <li><strong>What You'll Do:</strong> Walk along crystal-clear turquoise water, skip rocks, photograph reflections, breathe mountain air</li>
+            <li><strong>Perfect for 9-year-old:</strong> Flat, scenic, can turn around anytime</li>
           </ul>
+
+          <div class="highlight">
+            <div class="highlight-title">🎯 Photo Opportunities:</div>
+            <ul>
+              <li>Lake reflections of Mount Morrison and Laurel Mountain</li>
+              <li>Kids skipping rocks on turquoise water</li>
+              <li>Fallen logs jutting into lake (classic shot)</li>
+              <li>Marina and colorful kayaks (if season)</li>
+            </ul>
+          </div>
+
+          <p><strong>Historical Note:</strong> Named after 1871 prison break - escaped convicts hid in surrounding mountains and were recaptured near this lake.</p>
         </div>
       </div>
 
       <div class="event dining">
-        <div class="event-time">6:30 PM</div>
-        <div class="event-activity">🍽️ Dinner in Mammoth</div>
+        <div class="event-time">12:15-1:00 PM</div>
+        <div class="event-activity">🥗 Lunch Break</div>
+        <div class="event-location">📍 Convict Lake Resort or Packed Lunch</div>
         <div class="event-details">
-          <p><strong>Vegetarian-Friendly Options:</strong></p>
+          <p><strong>Option A:</strong> Convict Lake Resort Restaurant (casual, lakeside dining)</p>
+          <p><strong>Option B:</strong> Picnic lunch at lake with sandwiches from car cooler</p>
+          <p>Relax by the water. No rush - enjoy the mountain serenity.</p>
+        </div>
+      </div>
+
+      <div class="event scenic">
+        <div class="event-time">1:30-2:30 PM</div>
+        <div class="event-activity">🌡️ Hot Creek Geological Site</div>
+        <div class="event-location">📍 Hot Creek, Mammoth Lakes area</div>
+        <div class="event-details">
+          <p><strong>Distance from Convict Lake:</strong> 15 miles, 20 minutes north</p>
+          <p><strong>Duration:</strong> 45 minutes - 1 hour</p>
+          
+          <div class="highlight">
+            <div class="highlight-title">🌋 What Makes This Unique:</div>
+            <ul>
+              <li><strong>Active Geothermal:</strong> Steam vents, boiling springs, colorful mineral deposits</li>
+              <li><strong>Volcanic Activity:</strong> Evidence of Long Valley Caldera - massive ancient supervolcano</li>
+              <li><strong>Turquoise Hot Creek:</strong> Cold creek water mixing with 200°F underground springs</li>
+              <li><strong>Boardwalk Trail:</strong> Safe elevated walkway over geothermal features</li>
+            </ul>
+          </div>
+
+          <div class="highlight">
+            <div class="highlight-title">🎯 What You'll See:</div>
+            <ul>
+              <li>Steam rising from earth (looks like mini geysers)</li>
+              <li>Orange, yellow, white mineral deposits around hot springs</li>
+              <li>Cold creek running through canyon with hot springs bubbling up</li>
+              <li>Interpretive signs explaining volcanic geology</li>
+            </ul>
+          </div>
+
+          <p><strong>Activity:</strong> <span class="badge badge-easy">Easy</span> - Short 0.3-mile boardwalk loop from parking</p>
+          
+          <p><strong>⚠️ IMPORTANT SAFETY:</strong> Swimming/soaking PROHIBITED - water temperature fluctuates dangerously. Viewing only from designated areas.</p>
+
+          <p><strong>👨‍👩‍👧 Kid Appeal:</strong> Fascinating! Steam coming from ground, bubbling hot water, colorful rocks. Smells like sulfur (rotten eggs) - kids find this hilarious. Different from anything else on trip.</p>
+
+          <p><strong>Educational Moment:</strong> Explain Long Valley Caldera - supervolcano that erupted 760,000 years ago. Hot Creek is evidence it's still active underground!</p>
+        </div>
+      </div>
+
+      <div class="event driving">
+        <div class="event-time">2:45-3:15 PM</div>
+        <div class="event-activity">🚗 Drive to Mammoth Lakes</div>
+        <div class="event-details">
+          <p><strong>Distance:</strong> 10 miles from Hot Creek</p>
+          <p><strong>Duration:</strong> 15-20 minutes</p>
+          <p>Short drive into Mammoth Lakes town - premier mountain resort destination.</p>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-time">3:15-4:00 PM</div>
+        <div class="event-activity">🏨 Hotel Check-in & Settle</div>
+        <div class="event-location">📍 Mammoth Lakes Hotel</div>
+        <div class="event-details">
+          <p><strong>Recommended Areas:</strong> Mammoth Village, Old Mammoth Road, or Main Lodge area</p>
+          <p><strong>Hotel Amenities to Look For:</strong> Hot tub (sore hiking muscles!), pool, breakfast included</p>
+          <p>Unpack, rest, freshen up. You're staying TWO nights here - first time not moving hotels!</p>
+        </div>
+      </div>
+
+      <div class="event scenic">
+        <div class="event-time">4:30-6:00 PM</div>
+        <div class="event-activity">🌲 Mammoth Village Exploration</div>
+        <div class="event-location">📍 The Village at Mammoth</div>
+        <div class="event-details">
+          <p><strong>Duration:</strong> 1.5 hours</p>
+          
+          <div class="highlight">
+            <div class="highlight-title">What You'll Experience:</div>
+            <ul>
+              <li><strong>Alpine Village Atmosphere:</strong> European-style pedestrian plaza with mountain architecture</li>
+              <li><strong>Shops & Galleries:</strong> Outdoor gear shops, art galleries, souvenir stores</li>
+              <li><strong>Mammoth Gondola:</strong> Village Gondola provides access to Canyon Lodge (free ride, great views)</li>
+              <li><strong>Central Plaza:</strong> Fire pits, seating areas, mountain town vibes</li>
+              <li><strong>Holiday Lights:</strong> If late November, Village may have early holiday decorations</li>
+            </ul>
+          </div>
+
+          <p><strong>OPTIONAL ACTIVITY - Twilight Gondola Ride:</strong></p>
           <ul>
-            <li>Good Life Cafe - healthy bowls, salads, smoothies</li>
-            <li>Elixir - superfood bowls, fresh juices</li>
-            <li>Mammoth Rock Brasserie - upscale, mushroom strudel</li>
+            <li>Take free Village Gondola to Canyon Lodge and back</li>
+            <li>8-minute ride each way with mountain views</li>
+            <li>Kids love gondola rides!</li>
+            <li>Sunset timing perfect for golden light on peaks</li>
           </ul>
+
+          <p><strong>Shopping:</strong> Browse outdoor gear shops, pick up Mammoth Lakes souvenirs, grab coffee at local cafe.</p>
+        </div>
+      </div>
+
+      <div class="event dining">
+        <div class="event-time">6:30-8:00 PM</div>
+        <div class="event-activity">🍽️ Dinner in Mammoth</div>
+        <div class="event-location">📍 Mammoth Lakes dining</div>
+        <div class="event-details">
+          <p><strong>Restaurant Recommendations:</strong></p>
+          <ul>
+            <li><strong>Stellar Brew:</strong> Vegetarian-friendly pub food, craft beer, family atmosphere</li>
+            <li><strong>The Stove:</strong> Country-style breakfast and dinner (huge portions)</li>
+            <li><strong>Base Camp Cafe:</strong> Eclectic menu, vegetarian options, cozy vibe</li>
+            <li><strong>Gomez's:</strong> Mexican food, vegetarian options available</li>
+          </ul>
+
+          <p>Relax after easy day. Tomorrow is full day exploring Mammoth area!</p>
         </div>
       </div>
 
@@ -1518,53 +1452,198 @@
       <div class="day-header">
         <div class="day-date">Day 6 - Saturday, November 29, 2025</div>
         <h2 class="day-title">Mammoth Lakes Full Day Adventure</h2>
-        <div class="day-summary">🏔️ Alpine lakes • 🥾 Hiking trails • 🌲 Mountain scenery</div>
+        <div class="day-summary">🚡 Summit Gondola Ride • 🏞️ June Lake Loop • 🌊 Lakeside Exploration • 8 hours of mountain beauty</div>
+        <div style="margin-top: 12px;">
+          <span class="badge badge-easy">Easy-Moderate</span>
+          <span class="badge badge-optional">Flexible Activities</span>
+        </div>
       </div>
 
       <div class="event">
         <div class="event-time">8:00 AM</div>
-        <div class="event-activity">🥐 Breakfast at Shea Schat's Bakery</div>
+        <div class="event-activity">🌅 Relaxed Morning</div>
+        <div class="event-location">📍 Mammoth Hotel</div>
         <div class="event-details">
-          <p>Famous local bakery. Fresh pastries, coffee, breakfast sandwiches. Fuel up for hiking day!</p>
+          <p><strong>Sleep in a bit!</strong> Enjoy hotel breakfast. Pack day bag with snacks, water, layers (mountain weather changes quickly).</p>
+          <p><strong>Today's Plan:</strong> Full day exploring Mammoth area's natural wonders. No hotel checkout - staying another night!</p>
         </div>
       </div>
 
-      <div class="event hiking">
-        <div class="event-time">9:00 AM-3:00 PM</div>
-        <div class="event-activity">🥾 Alpine Lakes Exploration</div>
+      <div class="event scenic">
+        <div class="event-time">9:30 AM-12:00 PM ⭐ HIGHLIGHT</div>
+        <div class="event-activity">🚡 Mammoth Mountain Scenic Gondola</div>
+        <div class="event-location">📍 Mammoth Mountain Main Lodge</div>
         <div class="event-details">
-          <p><strong>Choose Your Adventure:</strong></p>
+          <p><strong>Elevation:</strong> Ride from 9,000 ft to 11,053 ft summit</p>
+          <p><strong>Duration:</strong> 2-2.5 hours total (includes gondola ride + summit time)</p>
+          <p><strong>Cost:</strong> ~$39 adults, ~$20 kids (check current rates)</p>
+          
+          <div class="highlight">
+            <div class="highlight-title">🎯 Why This is a MUST-DO:</div>
+            <ul>
+              <li><strong>Effortless Alpine Access:</strong> Reach 11,053 ft summit without hiking!</li>
+              <li><strong>360° Panoramic Views:</strong> See Sierra Crest, Mono Lake, Long Valley Caldera, Minarets</li>
+              <li><strong>Gondola Experience:</strong> 8-person enclosed cabins, smooth 15-minute ride up</li>
+              <li><strong>Summit Cafe:</strong> Warm up with hot chocolate at highest cafe in California</li>
+              <li><strong>Interpretive Center:</strong> Learn about local geology, wildlife, mountain ecology</li>
+            </ul>
+          </div>
+
+          <div class="highlight">
+            <div class="highlight-title">🏔️ What You'll See from Summit:</div>
+            <ul>
+              <li><strong>Sierra Nevada Crest:</strong> Endless jagged peaks stretching north and south</li>
+              <li><strong>Mono Lake:</strong> Ancient saline lake visible 30+ miles away</li>
+              <li><strong>The Minarets:</strong> Dramatic spire peaks to southwest</li>
+              <li><strong>Long Valley Caldera:</strong> Massive volcanic crater visible below</li>
+              <li><strong>On Clear Days:</strong> Can see all the way to Nevada border!</li>
+            </ul>
+          </div>
+
+          <p><strong>SUMMIT ACTIVITIES:</strong></p>
           <ul>
-            <li><strong>Easy Option:</strong> Lake Mary/George shoreline walks (flat, 1-2 miles)</li>
-            <li><strong>Moderate Option:</strong> Crystal Lake trail (4 miles, moderate elevation)</li>
-            <li><strong>Scenic Option:</strong> Drive to various lakes, short walks at each</li>
+            <li><strong>Observation Deck:</strong> Multi-level viewing platform with interpretive signs</li>
+            <li><strong>Short Alpine Walks:</strong> Paved paths around summit (easy, flat, 5-10 minutes)</li>
+            <li><strong>Cafe 11053:</strong> Hot drinks, snacks, restrooms</li>
+            <li><strong>Photo Opportunities:</strong> Summit sign, mountain panoramas, family photos at 11,053 ft</li>
+            <li><strong>Interpretive Displays:</strong> Learn about Sierra Nevada formation, local wildlife</li>
           </ul>
-          <p><strong>What You'll See:</strong> Alpine lakes, mountain reflections, pine forests, possible snow</p>
-          <p><strong>Bring:</strong> Layers, water, snacks, camera</p>
+
+          <p><strong>👨‍👩‍👧 Perfect for Families:</strong></p>
+          <ul>
+            <li>No strenuous hiking required - gondola does all the work!</li>
+            <li>Kids love gondola rides and summit experience</li>
+            <li>Multiple photo ops and activities at top</li>
+            <li>Indoor warming areas if cold</li>
+            <li>Accessible for all fitness levels</li>
+          </ul>
+
+          <p><strong>⚠️ Weather Note:</strong> Summit is 20-30°F colder than base. Bring jackets! November can have snow at summit.</p>
+
+          <p><strong>Timing:</strong> Arrive when gondola opens (~9:00-9:30 AM). Morning light best for photography. Spend 1-1.5 hours at summit before riding down.</p>
         </div>
       </div>
 
       <div class="event dining">
-        <div class="event-time">3:00 PM</div>
-        <div class="event-activity">🥗 Late Lunch</div>
+        <div class="event-time">12:30-1:30 PM</div>
+        <div class="event-activity">🍽️ Lunch in Mammoth</div>
+        <div class="event-location">📍 Mammoth Lakes town</div>
         <div class="event-details">
-          <p>Good Life Cafe or Elixir - healthy bowls and vegetarian options</p>
+          <p><strong>Quick lunch options:</strong> Base Camp Cafe, Stellar Brew, or pack sandwiches for scenic afternoon.</p>
+          <p>Fuel up for afternoon June Lake Loop adventure!</p>
+        </div>
+      </div>
+
+      <div class="event scenic">
+        <div class="event-time">2:00-5:00 PM ⭐ HIGHLIGHT</div>
+        <div class="event-activity">🏞️ June Lake Loop Scenic Drive</div>
+        <div class="event-location">📍 June Lake Loop (CA-158)</div>
+        <div class="event-details">
+          <p><strong>Distance:</strong> 16-mile scenic loop</p>
+          <p><strong>Duration:</strong> 3 hours with stops at multiple lakes</p>
+          <p><strong>Route:</strong> US-395 S → CA-158 (June Lake Loop) → US-395 N back to Mammoth</p>
+          
+          <div class="highlight">
+            <div class="highlight-title">⭐ Why June Lake Loop is Special:</div>
+            <ul>
+              <li><strong>"Switzerland of California":</strong> Alpine lakes surrounded by dramatic peaks</li>
+              <li><strong>Four Major Lakes:</strong> June, Gull, Silver, Grant - each unique and beautiful</li>
+              <li><strong>Fall Colors:</strong> If any aspen leaves remain, golden against evergreens</li>
+              <li><strong>Less Crowded:</strong> Quieter than main Mammoth attractions</li>
+              <li><strong>Diverse Scenery:</strong> Every turn reveals new mountain vista</li>
+            </ul>
+          </div>
+
+          <p><strong>STOP 1: Grant Lake Vista (15 minutes)</strong></p>
+          <ul>
+            <li>First viewpoint after turning onto CA-158</li>
+            <li>Massive lake with Sierra Crest backdrop</li>
+            <li>Quick photo stop, stretch legs</li>
+            <li>Elevation: 7,100 ft</li>
+          </ul>
+
+          <p><strong>STOP 2: Silver Lake (30-45 minutes)</strong></p>
+          <ul>
+            <li><strong>Most Photographed:</strong> Dramatic Rush Creek canyon and Carson Peak (10,909 ft) backdrop</li>
+            <li><strong>Activity:</strong> <span class="badge badge-easy">Easy</span> - Walk along shoreline boardwalk</li>
+            <li><strong>Duration:</strong> 20-30 minute stroll</li>
+            <li><strong>Perfect Reflections:</strong> Calm afternoon water mirrors mountains perfectly</li>
+            <li><strong>Kid-Friendly:</strong> Flat, accessible, ducks to watch</li>
+          </ul>
+
+          <p><strong>STOP 3: Gull Lake Overlook (15 minutes)</strong></p>
+          <ul>
+            <li>Small pristine lake nestled in pine forest</li>
+            <li>Pull off at overlook for photos</li>
+            <li>Less dramatic than Silver, but beautifully serene</li>
+          </ul>
+
+          <p><strong>STOP 4: June Lake (45 minutes - 1 hour)</strong></p>
+          <ul>
+            <li><strong>Main Town:</strong> Quaint mountain village with shops, cafes, marina</li>
+            <li><strong>Lake Access:</strong> Easy beach access for rock skipping</li>
+            <li><strong>Activity Options:</strong> Walk along shore, explore village, grab coffee/hot chocolate</li>
+            <li><strong>Backdrop:</strong> Dramatic cliffs and Carson Peak towering above</li>
+            <li><strong>Town Charm:</strong> Browse June Lake General Store, Old West style buildings</li>
+          </ul>
+
+          <div class="highlight">
+            <div class="highlight-title">📸 Photography Highlights:</div>
+            <ul>
+              <li>Silver Lake with Carson Peak reflection (THE iconic shot)</li>
+              <li>Kids skipping rocks on June Lake</li>
+              <li>Mountain panoramas at every turn</li>
+              <li>Aspens against evergreens (if any fall color remains)</li>
+              <li>Historic buildings in June Lake village</li>
+            </ul>
+          </div>
+
+          <p><strong>OPTIONAL: Oh Ridge Lookout</strong></p>
+          <ul>
+            <li>Short detour to high viewpoint overlooking Mono Lake</li>
+            <li>Drive 1 mile up Oh Ridge Road (graded dirt)</li>
+            <li>Panoramic view of Mono Basin and Sierra Crest</li>
+            <li>Only if time and energy permit</li>
+          </ul>
+
+          <p><strong>👨‍👩‍👧 Why Families Love This:</strong></p>
+          <ul>
+            <li>Mostly car-based - drive between stops, minimal hiking</li>
+            <li>Each lake offers different experience and photo op</li>
+            <li>Kids can skip rocks, explore shorelines, see wildlife</li>
+            <li>Manageable after 6 days of more strenuous activities</li>
+            <li>Beautiful but not exhausting</li>
+          </ul>
+
+          <p><strong>Return:</strong> Complete loop back to US-395, drive 30 minutes north to Mammoth. Arrive by 5:30 PM.</p>
+        </div>
+      </div>
+
+      <div class="event dining">
+        <div class="event-time">6:00-7:30 PM</div>
+        <div class="event-activity">🍽️ Dinner in Mammoth</div>
+        <div class="event-location">📍 Mammoth Lakes</div>
+        <div class="event-details">
+          <p><strong>Celebratory Dinner Options:</strong></p>
+          <ul>
+            <li><strong>The Lakefront Restaurant:</strong> Upscale, Tamarack Lodge, beautiful setting</li>
+            <li><strong>Petra's Bistro:</strong> Mediterranean, excellent vegetarian options</li>
+            <li><strong>Roberto's Cafe:</strong> Mexican, family-friendly, great margaritas for adults</li>
+            <li><strong>Gomez's:</strong> Casual Mexican, large portions, kids menu</li>
+          </ul>
+
+          <p><strong>Tonight's Mood:</strong> Relaxed celebration. Full day of beautiful mountain scenery completed. Tomorrow is drive home - reflect on amazing week!</p>
         </div>
       </div>
 
       <div class="event">
-        <div class="event-time">4:30-6:00 PM</div>
-        <div class="event-activity">Free Time / Rest</div>
+        <div class="event-time">8:00 PM</div>
+        <div class="event-activity">🏨 Evening at Hotel</div>
+        <div class="event-location">📍 Mammoth Hotel</div>
         <div class="event-details">
-          <p>Relax at accommodation, explore town, hot tub if available, prep for tomorrow's return.</p>
-        </div>
-      </div>
-
-      <div class="event dining">
-        <div class="event-time">7:00 PM</div>
-        <div class="event-activity">🍽️ Special Dinner</div>
-        <div class="event-details">
-          <p><strong>Mammoth Rock Brasserie</strong> - Upscale celebration dinner. Excellent mushroom strudel and vegetarian options. Celebrate amazing week!</p>
+          <p><strong>Relaxation Time:</strong> Hot tub (sore muscles!), swimming, or just rest in room.</p>
+          <p><strong>Pack Tonight:</strong> Organize luggage for tomorrow's drive home. Check weather for return route.</p>
+          <p><strong>Early Bedtime:</strong> Long drive tomorrow (5-6 hours to San Jose).</p>
         </div>
       </div>
 
@@ -1578,76 +1657,191 @@
     <div class="day-section" data-day="7">
       <div class="day-header">
         <div class="day-date">Day 7 - Sunday, November 30, 2025</div>
-        <h2 class="day-title">Return to San Jose</h2>
-        <div class="day-summary">🚗 Drive home • Optional Blue Elephant Thai stop • ~340 miles</div>
+        <h2 class="day-title">Return Journey to San Jose</h2>
+        <div class="day-summary">🏡 Homeward Bound • 🌊 Mono Lake Stop • 🛣️ Scenic US-395 & CA-120 • 320 miles</div>
       </div>
 
       <div class="event">
-        <div class="event-time">8:00-9:00 AM</div>
-        <div class="event-activity">🥐 Final Mammoth Breakfast &amp; Checkout</div>
+        <div class="event-time">7:30 AM</div>
+        <div class="event-activity">☀️ Early Wake & Checkout</div>
+        <div class="event-location">📍 Mammoth Hotel</div>
         <div class="event-details">
-          <p>Leisurely breakfast. Pack up. Check out. Say goodbye to mountains.</p>
+          <p><strong>Final morning in Mammoth.</strong> Grab quick breakfast, load car, check out by 8:00 AM.</p>
+          <p><strong>Today's Goal:</strong> Home by 6:00-7:00 PM. Long drive but with beautiful stops along the way.</p>
+          <p><strong>Pack car strategically:</strong> Snacks accessible, water bottles filled, entertainment ready for kids.</p>
         </div>
       </div>
 
       <div class="event driving">
-        <div class="event-time">9:00 AM-6:00 PM</div>
-        <div class="event-activity">🚗 Return Drive to San Jose</div>
-        <div class="event-location">📍 US-395 S → CA-58 W → Various routes west</div>
+        <div class="event-time">8:00-9:00 AM</div>
+        <div class="event-activity">🚗 Drive: Mammoth Lakes → Mono Lake</div>
+        <div class="event-location">📍 US-395 North</div>
         <div class="event-details">
-          <p><strong>Distance:</strong> ~340 miles, 6-7 hours with stops</p>
-          <p><strong>Route Options:</strong></p>
+          <p><strong>Distance:</strong> 30 miles north</p>
+          <p><strong>Duration:</strong> 45 minutes</p>
+          <p><strong>Scenic Highlights:</strong> Descend from mountain elevation, views of June Lake area, Mono Craters volcanic domes</p>
+        </div>
+      </div>
+
+      <div class="event scenic">
+        <div class="event-time">9:00-10:00 AM</div>
+        <div class="event-activity">🌊 Mono Lake South Tufa Area</div>
+        <div class="event-location">📍 Mono Lake Tufa State Natural Reserve</div>
+        <div class="event-details">
+          <p><strong>Duration:</strong> 1 hour (final major stop before long drive home)</p>
+          <p><strong>Entrance Fee:</strong> $3 per person (ages 16+)</p>
+          
+          <div class="highlight">
+            <div class="highlight-title">🎯 Why Stop at Mono Lake:</div>
+            <ul>
+              <li><strong>Ancient Saline Lake:</strong> 1 million years old, 2-3 times saltier than ocean</li>
+              <li><strong>Tufa Towers:</strong> Bizarre limestone towers rising from water</li>
+              <li><strong>Otherworldly Landscape:</strong> Looks like alien planet</li>
+              <li><strong>Unique Ecosystem:</strong> Trillions of brine shrimp, alkali flies, migratory birds</li>
+              <li><strong>Perfect "Bookend":</strong> Started trip with desert, ending with ancient lake</li>
+            </ul>
+          </div>
+
+          <div class="highlight">
+            <div class="highlight-title">🔬 What Are Tufa Towers?</div>
+            <p>Tufa forms underwater where calcium-rich freshwater springs meet alkaline lake water. Chemical reaction creates limestone deposits. When water level dropped (due to LA water diversion 1941-1994), towers were exposed - now standing 10-30 feet tall along shoreline.</p>
+          </div>
+
+          <p><strong>ACTIVITY - South Tufa Trail:</strong></p>
           <ul>
-            <li><strong>Direct Route:</strong> US-395 S → CA-58 W → I-5 N → US-101 N (fastest)</li>
-            <li><strong>Bakersfield Route:</strong> Stop at Blue Elephant Thai again! (adds 30 min)</li>
+            <li><strong>Distance:</strong> 1-mile loop</li>
+            <li><strong>Difficulty:</strong> <span class="badge badge-easy">Easy</span> - Flat boardwalk and sandy beach</li>
+            <li><strong>Duration:</strong> 30-45 minutes</li>
+            <li><strong>What You'll See:</strong> Walk among tufa towers, reach lake shore, photograph bizarre formations</li>
           </ul>
 
           <div class="highlight">
-            <div class="highlight-title">🍽️ Optional: Blue Elephant Thai in Bakersfield</div>
-            <p>If you loved it on Day 0, stop again! Same great vegetarian food. Perfect dinner stop on drive home.</p>
-            <p><strong>Timing:</strong> Arrive Bakersfield around 3:30-4:00 PM for early dinner, home by 7:00 PM</p>
+            <div class="highlight-title">📸 Photography Opportunities:</div>
+            <ul>
+              <li>Tufa towers reflected in calm morning water</li>
+              <li>Kids standing next to towers for scale</li>
+              <li>Sierra Nevada mountains across lake</li>
+              <li>Birds (gulls, grebes) on water</li>
+              <li>Bizarre lunar-like landscape</li>
+            </ul>
           </div>
 
-          <p><strong>Suggested Stops:</strong></p>
+          <p><strong>👨‍👩‍👧 Kid Experience:</strong> Fascinating! Towers look like drip sandcastles. Water is super salty (kids can touch but not swim - too cold in November). Flies and birds everywhere. Smells a bit strange (alkaline). Very different from any other stop on trip!</p>
+
+          <p><strong>Educational Note:</strong> Explain ecological importance - critical stopover for millions of migratory birds. Audubon Society fought to save lake from drying up completely.</p>
+        </div>
+      </div>
+
+      <div class="event driving">
+        <div class="event-time">10:00-10:30 AM</div>
+        <div class="event-activity">🚗 Lee Vining Stop</div>
+        <div class="event-location">📍 Lee Vining, CA</div>
+        <div class="event-details">
+          <p><strong>Gas Station Stop:</strong> Fuel up (last gas before long stretch)</p>
+          <p><strong>Snacks:</strong> Whoa Nellie Deli (famous for gourmet gas station food!) or grab supplies for drive</p>
+          <p><strong>Restrooms:</strong> Last clean facilities before CA-120 west</p>
+        </div>
+      </div>
+
+      <div class="event driving">
+        <div class="event-time">10:30 AM-12:30 PM</div>
+        <div class="event-activity">🚗 Tioga Pass Road (CA-120 West)</div>
+        <div class="event-location">📍 Eastern Sierra → Central Valley</div>
+        <div class="event-details">
+          <p><strong>Distance:</strong> 80 miles from Lee Vining</p>
+          <p><strong>Duration:</strong> 2 hours (winding mountain road)</p>
+          
+          <div class="highlight">
+            <div class="highlight-title">⚠️ CRITICAL - Check Road Status:</div>
+            <p><strong>Tioga Pass (CA-120) typically CLOSES for winter November-May!</strong></p>
+            <p><strong>Check before departure:</strong> Caltrans road conditions (800-427-7623) or nps.gov/yose</p>
+            <p><strong>If CLOSED:</strong> Take alternate route via US-395 S → CA-58 W (adds 1.5 hours but guaranteed open)</p>
+          </div>
+
+          <p><strong>IF TIOGA PASS IS OPEN:</strong></p>
           <ul>
-            <li>Bishop - coffee, bathroom break (1.5 hours into drive)</li>
-            <li>Ridgecrest or Bakersfield - lunch or dinner</li>
-            <li>Gas stations as needed</li>
+            <li><strong>Spectacular Drive:</strong> Through Yosemite high country (Tuolumne Meadows area)</li>
+            <li><strong>Elevation:</strong> Crosses 9,943 ft Tioga Pass - highest highway pass in California</li>
+            <li><strong>Scenery:</strong> Alpine lakes, granite domes, meadows, pine forests</li>
+            <li><strong>Note:</strong> No services between Lee Vining and Groveland (100+ miles)</li>
           </ul>
+
+          <p><strong>ALTERNATE ROUTE (If Tioga Closed):</strong></p>
+          <ul>
+            <li>US-395 South → CA-14 S → CA-58 W → CA-99 N → I-580 W → US-101 N</li>
+            <li>Longer (adds 100 miles, 1.5 hours) but scenic through desert and San Joaquin Valley</li>
+            <li>More services available (gas, food, restrooms)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="event dining">
+        <div class="event-time">12:30-1:30 PM</div>
+        <div class="event-activity">🍽️ Lunch Break</div>
+        <div class="event-location">📍 Groveland, Oakdale, or Modesto (depending on route)</div>
+        <div class="event-details">
+          <p><strong>Groveland (if Tioga open):</strong> Small town near Yosemite west entrance, historic buildings, cafes</p>
+          <p><strong>Oakdale/Modesto (if Tioga closed):</strong> More dining options, chain restaurants, faster service</p>
+          
+          <p><strong>Stretch break:</strong> Walk around, use restrooms, refuel snacks and water. Still 3-4 hours to San Jose.</p>
+        </div>
+      </div>
+
+      <div class="event driving">
+        <div class="event-time">1:30-5:30 PM</div>
+        <div class="event-activity">🚗 Final Push: Central Valley → San Jose</div>
+        <div class="event-details">
+          <p><strong>Distance:</strong> ~150 miles remaining</p>
+          <p><strong>Duration:</strong> 3-4 hours (traffic dependent)</p>
+          
+          <p><strong>Route:</strong> CA-120 W → I-580 W → US-101 N (or similar depending on traffic)</p>
+          
+          <div class="highlight">
+            <div class="highlight-title">Final Stretch Highlights:</div>
+            <ul>
+              <li><strong>Central Valley:</strong> Flat agricultural landscapes, sunset over farmlands</li>
+              <li><strong>Altamont Pass:</strong> Wind turbines, rolling hills, Bay Area approaches</li>
+              <li><strong>Familiar Territory:</strong> Back to Bay Area - South Bay views</li>
+              <li><strong>Home Stretch:</strong> I-680 or US-101 into San Jose</li>
+            </ul>
+          </div>
+
+          <p><strong>Entertainment for Kids:</strong> Audiobook finale, playlist of trip favorites, "remember when..." conversation about best moments.</p>
+          
+          <p><strong>Sunday Afternoon Traffic:</strong> Expect some congestion approaching Bay Area (4:00-6:00 PM). Build in buffer time.</p>
         </div>
       </div>
 
       <div class="event">
-        <div class="event-time">6:00-7:00 PM</div>
-        <div class="event-activity">🏠 Arrive Home San Jose</div>
+        <div class="event-time">5:30-6:30 PM</div>
+        <div class="event-activity">🏡 Arrival Home!</div>
+        <div class="event-location">📍 San Jose, CA</div>
         <div class="event-details">
-          <p><strong>Welcome Home!</strong> Unpack car. Share photos with family/friends. Start planning next adventure!</p>
+          <p><strong>Welcome Home!</strong> 8 incredible days, 950+ miles, countless memories.</p>
           
           <div class="highlight">
-            <div class="highlight-title">🌟 Trip Memories:</div>
-            <p>8 days, 800 miles, countless memories. Death Valley sunrises, sand dunes, salt flats, mountain hikes, alpine lakes, and vegetarian feasts. What an adventure!</p>
+            <div class="highlight-title">🎉 Trip Highlights Recap:</div>
+            <ul>
+              <li><strong>Day 0:</strong> Mediterranean lunch in Gilroy, Thai dinner in Bakersfield</li>
+              <li><strong>Day 1:</strong> Zabriskie Point sunrise, Golden Canyon hiking, Badwater Basin</li>
+              <li><strong>Day 2:</strong> Mesquite Flat Dunes sunrise, Mosaic Canyon, Ubehebe Crater</li>
+              <li><strong>Day 3:</strong> Relaxation day - Natural Bridge, Devil's Golf Course</li>
+              <li><strong>Day 4:</strong> Mount Whitney Portal, Alabama Hills movie locations</li>
+              <li><strong>Day 5:</strong> Convict Lake, Hot Creek geothermal, Mammoth Village</li>
+              <li><strong>Day 6:</strong> Mammoth Mountain Gondola (11,053 ft!), June Lake Loop</li>
+              <li><strong>Day 7:</strong> Mono Lake tufa towers, scenic drive home</li>
+            </ul>
           </div>
-        </div>
-      </div>
 
-      <div class="expandable">
-        <div class="expandable-header" onclick="toggleExpand(this)">
-          <span>📊 Complete Trip Stats</span>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="expandable-content">
-          <ul>
-            <li><strong>Total Days:</strong> 8 days (Nov 23-30, 2025)</li>
-            <li><strong>Total Miles:</strong> ~800 miles round trip</li>
-            <li><strong>Death Valley Days:</strong> 3 full days</li>
-            <li><strong>Mount Whitney/Alabama Hills:</strong> 1 day</li>
-            <li><strong>Mammoth Lakes:</strong> 2 days</li>
-            <li><strong>Total Hiking:</strong> 15-25 miles (depending on options chosen)</li>
-            <li><strong>Elevation Range:</strong> -282 ft (Badwater) to 10,000+ ft (Mammoth)</li>
-            <li><strong>Sunrises Witnessed:</strong> 2 (Zabriskie Point, Sand Dunes)</li>
-            <li><strong>Vegetarian Restaurants:</strong> 8+</li>
-            <li><strong>Memories Created:</strong> Priceless!</li>
-          </ul>
+          <p><strong>Unpack Tonight or Tomorrow?</strong> Your choice! Celebrate with delivery dinner. Rest. You earned it.</p>
+          
+          <p><strong>Photo Sorting Begins...</strong> 1000+ photos to go through. Memories to last forever!</p>
+
+          <p><strong>🌟 Congratulations!</strong> You completed an epic 8-day family road trip through some of America's most stunning landscapes. Death Valley's badlands and dunes, Mount Whitney's towering peaks, Alabama Hills' movie magic, Mammoth's alpine beauty, and Mono Lake's otherworldly tufa towers.</p>
+          
+          <p><strong>Most importantly:</strong> Quality time together, new experiences, shared adventures, memories the kids (ages 14 & 9) will treasure forever.</p>
+
+          <p><strong>Trip Complete! 🎊</strong></p>
         </div>
       </div>
 
@@ -1661,28 +1855,25 @@
 
   <script>
     // Day navigation
-    const dayButtons = document.querySelectorAll('.day-btn');
+    const dayBtns = document.querySelectorAll('.day-btn');
     const daySections = document.querySelectorAll('.day-section');
 
-    dayButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const dayNum = button.getAttribute('data-day');
+    dayBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const dayNum = btn.getAttribute('data-day');
         
-        // Update active button
-        dayButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+        // Remove active from all
+        dayBtns.forEach(b => b.classList.remove('active'));
+        daySections.forEach(s => s.classList.remove('active'));
         
-        // Update active section
-        daySections.forEach(section => section.classList.remove('active'));
+        // Add active to selected
+        btn.classList.add('active');
         document.querySelector(`.day-section[data-day="${dayNum}"]`).classList.add('active');
-        
-        // Scroll to top
-        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
 
     // Expandable sections
-    function toggleExpand(header) {
+    function toggleExpandable(header) {
       const content = header.nextElementSibling;
       const arrow = header.querySelector('.arrow');
       
@@ -1690,64 +1881,29 @@
       arrow.classList.toggle('open');
     }
 
-    // Expand all button
+    // Expand all toggle
     document.getElementById('expandAll').addEventListener('click', function() {
-      const currentDay = document.querySelector('.day-section.active');
-      const expandables = currentDay.querySelectorAll('.expandable-content');
-      const arrows = currentDay.querySelectorAll('.arrow');
+      const allContents = document.querySelectorAll('.expandable-content');
+      const allArrows = document.querySelectorAll('.arrow');
+      const anyOpen = Array.from(allContents).some(c => c.classList.contains('open'));
       
-      const allOpen = Array.from(expandables).every(exp => exp.classList.contains('open'));
-      
-      if (allOpen) {
-        expandables.forEach(exp => exp.classList.remove('open'));
-        arrows.forEach(arrow => arrow.classList.remove('open'));
-        this.textContent = 'Expand All';
-      } else {
-        expandables.forEach(exp => exp.classList.add('open'));
-        arrows.forEach(arrow => arrow.classList.add('open'));
-        this.textContent = 'Collapse All';
-      }
-    });
-
-    // Update expand/collapse button text when switching days
-    dayButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        document.getElementById('expandAll').textContent = 'Expand All';
-      });
-    });
-
-    // Save notes using in-memory storage (since localStorage is blocked)
-    const notesState = {};
-    const noteInputs = document.querySelectorAll('.note-input');
-    
-    noteInputs.forEach(input => {
-      // Initialize notes state
-      notesState[input.id] = '';
-      
-      // Save to memory on input
-      input.addEventListener('input', function() {
-        notesState[this.id] = this.value;
-      });
-      
-      // Restore notes when switching days
-      input.addEventListener('focus', function() {
-        if (notesState[this.id]) {
-          this.value = notesState[this.id];
+      allContents.forEach(content => {
+        if (anyOpen) {
+          content.classList.remove('open');
+        } else {
+          content.classList.add('open');
         }
       });
-    });
-
-    // Restore notes when switching between days
-    dayButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        setTimeout(() => {
-          const currentDay = document.querySelector('.day-section.active');
-          const noteInput = currentDay.querySelector('.note-input');
-          if (noteInput && notesState[noteInput.id]) {
-            noteInput.value = notesState[noteInput.id];
-          }
-        }, 100);
+      
+      allArrows.forEach(arrow => {
+        if (anyOpen) {
+          arrow.classList.remove('open');
+        } else {
+          arrow.classList.add('open');
+        }
       });
+      
+      this.textContent = anyOpen ? 'Expand All' : 'Collapse All';
     });
   </script>
 </body>
